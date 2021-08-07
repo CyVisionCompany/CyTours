@@ -1,18 +1,47 @@
-.form{
+.form {
+  padding: 5rem 7rem;
+  background-color: $color-white;
 
-    &__text{
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 
+  &__text {
+    margin-bottom: 4rem;
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: $color-label;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    background-color: $color-grey-light;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    outline: none;
+    font-size: 1rem;
+
+    &:focus {
+      border-bottom: $color-input-border 3px solid;
     }
 
-    &__label{
-
+    &::placeholder {
+      color: $color-grey-dark;
     }
+  }
 
-    &__input{
-
-    }
-
-    &__button{
-        
-    }
+  &__button {
+    padding: 1rem 3.5rem;
+    border-radius: 100px;
+    border: none;
+    background-color: $color-secondary;
+    color: $color-background;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
 }
