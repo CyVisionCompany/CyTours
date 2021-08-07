@@ -5,6 +5,10 @@
   align-items: center;
   padding: 0 4rem;
 
+  @include responsive(tablet) {
+    flex-direction: column;
+  }
+
   &__logo {
     display: flex;
     align-items: center;
@@ -15,18 +19,25 @@
 
   &__logo-text {
     @include primary-grediant;
-    font-size: 1rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    margin-left: 0.6rem;
+    margin-left: 0.3rem;
   }
 
   &__content {
     &__links {
       display: flex;
 
+      @include responsive(tablet) {
+        margin: 1rem 0;
+      }
+
       &__link {
         padding: 0.5rem;
-        font-size: 1rem;
+        font-size: 1.4rem;
+        @include responsive(phone) {
+          font-size: 1rem;
+        }
         color: $color-text;
       }
     }
@@ -35,8 +46,16 @@
       padding: 0.5rem;
       display: flex;
       color: $color-grey-dark;
-      font-size: 1rem;
+      font-size: 1.4rem;
       justify-content: flex-end;
+
+      @include responsive(tablet) {
+        justify-content: center;
+      }
+
+      @include responsive(phone) {
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -7,3 +7,16 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+@mixin responsive($break) {
+  @if $break == phone {
+    @media only screen and (max-width: $br-phone) {
+      @content;
+    }
+  }
+  @if $break == tablet {
+    @media only screen and (max-width: $br-tablet) {
+      @content;
+    }
+  }
+}

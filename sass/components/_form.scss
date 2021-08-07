@@ -3,7 +3,11 @@
   background-color: $color-white;
   border-radius: 0.5rem;
 
-  &__group:not(:last-child) {
+  @include responsive(phone) {
+    padding: 5rem 2rem;
+  }
+
+  &__group {
     margin-bottom: 2rem;
   }
 
@@ -22,10 +26,10 @@
     width: 100%;
     border: none;
     background-color: $color-grey-light;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 0.3rem;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-bottom: $color-grey-light 3px solid;
 
     &:focus {
@@ -36,7 +40,7 @@
       color: $color-grey-dark;
     }
 
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   &__button {
@@ -45,16 +49,16 @@
     border: none;
     background-color: $color-secondary;
     color: $color-background;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     transition: all 0.3s;
 
-    &:hover{
+    &:hover {
       transform: translateY(-3px);
       box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
     }
 
-    &:focus{
+    &:focus {
       transform: translateY(-1px);
       box-shadow: 0 0.4rem 0.6rem rgba($color-black, 0.5);
     }

@@ -10,6 +10,10 @@
     text-transform: uppercase;
     color: $color-white;
     padding: 1rem 3rem;
+
+    @include responsive(phone) {
+      font-size: 1rem;
+    }
   }
 
   &__logo {
@@ -19,20 +23,29 @@
   &__img {
     height: 3.5rem;
     width: 6.8rem;
+    @include responsive(phone) {
+      height: 2.5rem;
+      width: 5rem;
+      display: none;
+    }
   }
 
   &__button {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: $color-white;
     padding: 1rem 3rem;
     text-transform: uppercase;
+    @include responsive(phone) {
+      font-size: 1rem;
+      padding: 0.5rem 1.5rem;
+    }
     font-weight: 400;
     &--login {
     }
 
     &--signup {
       border-radius: 100px;
-      border: $color-white solid 2px;
+      border: $color-white solid 1px;
     }
   }
 }
