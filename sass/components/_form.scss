@@ -8,6 +8,10 @@
     padding: 5rem 2rem;
   }
 
+  @include responsive(tablet) {
+    margin: 2.5rem;
+  }
+
   &__group {
     margin-bottom: 2rem;
   }

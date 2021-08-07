@@ -34,6 +34,9 @@ a {
   @media only screen and (max-width: 37.5em) {
     .form {
       padding: 5rem 2rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .form {
+      margin: 2.5rem; } }
   .form__group {
     margin-bottom: 2rem; }
   .form__text {
@@ -139,8 +142,7 @@ a {
     @media only screen and (max-width: 37.5em) {
       .header__img {
         height: 2.5rem;
-        width: 5rem;
-        display: none; } }
+        width: 5rem; } }
   .header__button {
     font-size: 1.6rem;
     color: #ffffff;
