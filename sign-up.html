@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>CyTours</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__paragraph">alltours</p>
+      <a href="#" class="header__logo">
+        <img src="img/sign-up/logo-xl.svg" alt="logo" class="header__img" />
+      </a>
+      <div class="header__button">
+        <a href="login.html" class="header__button header__button--login">log in</a>
+        <a href="sign-up.html" class="header__button header__button--signup">sign up</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main__login">
+        <form class="form" method="#">
+          <p class="heading-primary form__text">create your account!</p>
+
+          <div class="form__group">
+            <label for="#name" class="form__label">Your Name</label>
+            <input
+              type="name"
+              class="form__input"
+              placeholder="you@example.com"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="#email" class="form__label">Email Address</label>
+            <input
+              type="email"
+              class="form__input"
+              placeholder="you@example.com"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="#password" class="form__label">Password</label>
+            <input
+              type="password"
+              class="form__input"
+              id="password"
+              name="password"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="#confirm-password" class="form__label">Confirm Password</label>
+            <input
+              type="password"
+              class="form__input"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+
+          <button class="form__button" name="submit">login</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img
+          src="img/sign-up/logo-grediant.svg"
+          alt="logo"
+          class="footer__img"
+        />
+        <p class="footer__logo-text">natours</p>
+      </div>
+      <div class="footer__content">
+        <div class="footer__content__links">
+          <a href="#" class="footer__content__links__link">About us</a>
+          <a href="#" class="footer__content__links__link">Download apps</a>
+          <a href="#" class="footer__content__links__link">Become a guid</a>
+          <a href="#" class="footer__content__links__link">Careers</a>
+          <a href="#" class="footer__content__links__link">Contact</a>
+        </div>
+        <div class="footer__content__copyright">
+          &COPY; 2021 bt jonas schmedtmann
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
