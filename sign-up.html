@@ -17,14 +17,24 @@
   </head>
   <body>
     <header class="header">
-      <p class="header__paragraph">alltours</p>
-      <a href="#" class="header__logo">
-        <img src="img/sign-up/logo-xl.svg" alt="logo" class="header__img" />
-      </a>
-      <div class="header__button">
-        <a href="login.html" class="header__button header__button--login">log in</a>
-        <a href="sign-up.html" class="header__button header__button--signup">sign up</a>
-      </div>
+      <nav class="header__nav">
+        <p class="header__paragraph">alltours</p>
+        <a href="#" class="header__logo">
+          <img src="img/sign-up/logo-xl.svg" alt="logo" class="header__img" />
+        </a>
+        <ul class="header__button">
+          <li>
+            <a href="login.html" class="header__button header__button--login"
+              >log in</a
+            >
+          </li>
+          <li>
+            <a href="sign-up.html" class="header__button header__button--signup"
+              >sign up</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
@@ -64,17 +74,21 @@
               id="password"
               name="password"
               required
+              maxlength="8"
             />
           </div>
 
           <div class="form__group">
-            <label for="#confirm-password" class="form__label">Confirm Password</label>
+            <label for="#confirm-password" class="form__label"
+              >Confirm Password</label
+            >
             <input
               type="password"
               class="form__input"
               id="confirm-password"
               name="confirm-password"
               required
+              maxlength="8"
             />
           </div>
 

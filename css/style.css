@@ -71,10 +71,11 @@ a {
     transition: all 0.3s; }
     .form__button:hover {
       transform: translateY(-3px);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+      box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15); }
     .form__button:focus {
       transform: translateY(-1px);
-      box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.5); }
+      background-color: #3a9a5a;
+      box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.25); }
 
 .footer {
   background-color: #f7f7f7;
@@ -121,11 +122,12 @@ a {
         font-size: 1rem; } }
 
 .header {
-  display: flex;
-  justify-content: space-between;
   background-color: #444444;
-  padding: 1.5rem 0;
-  align-items: center; }
+  padding: 1.5rem 0; }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .header__paragraph {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -145,6 +147,8 @@ a {
         width: 5rem; } }
   .header__button {
     font-size: 1.6rem;
+    list-style: none;
+    display: flex;
     color: #ffffff;
     padding: 1rem 3rem;
     text-transform: uppercase;
