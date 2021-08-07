@@ -1,0 +1,42 @@
+.footer {
+  background-color: $color-background;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+  }
+
+  &__logo-text {
+    @include primary-grediant;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 0.6rem;
+  }
+
+  &__content {
+    &__links {
+      display: flex;
+
+      &__link {
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: $color-text;
+      }
+    }
+
+    &__copyright {
+      padding: 0.5rem;
+      display: flex;
+      color: $color-grey-dark;
+      font-size: 1rem;
+      justify-content: flex-end;
+    }
+  }
+}

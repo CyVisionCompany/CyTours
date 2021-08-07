@@ -1,11 +1,5 @@
 .heading-primary {
   text-transform: uppercase;
   font-size: 2.3rem;
-  background-image: linear-gradient(
-    to right,
-    $color-green-light,
-    $color-green-dark
-  );
-  -webkit-background-clip: text;
-  color: transparent;
+  @include primary-grediant;
 }

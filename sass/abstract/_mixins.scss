@@ -1,0 +1,9 @@
+@mixin primary-grediant {
+  background-image: linear-gradient(
+    to right,
+    $color-green-light,
+    $color-green-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
