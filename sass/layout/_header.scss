@@ -1,5 +1,38 @@
-.header{
- 
-    
-    &__
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-primary;
+  padding: 1.5rem 0;
+  align-items: center;
+
+  &__paragraph {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-white;
+    padding: 1rem 3rem;
+  }
+
+  &__logo {
+     width: 0;
+  }
+
+  &__img {
+    height: 3.5rem;
+    width: 6.8rem;
+  }
+
+  &__button {
+    font-size: 1.2rem;
+    color: $color-white;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    &--login {
+    }
+
+    &--signup {
+      border-radius: 100px;
+      border: $color-white solid 2px;
+    }
+  }
 }
