@@ -26,6 +26,7 @@
     border-radius: 0.3rem;
     outline: none;
     font-size: 1rem;
+    border-bottom: $color-grey-light 3px solid;
 
     &:focus {
       border-bottom: $color-input-border 3px solid;
@@ -34,6 +35,8 @@
     &::placeholder {
       color: $color-grey-dark;
     }
+
+    transition: all .3s;
   }
 
   &__button {
@@ -44,5 +47,16 @@
     color: $color-background;
     font-size: 1.2rem;
     text-transform: uppercase;
+    transition: all 0.3s;
+
+    &:hover{
+      transform: translateY(-3px);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+    }
+
+    &:focus{
+      transform: translateY(-1px);
+      box-shadow: 0 0.4rem 0.6rem rgba($color-black, 0.5);
+    }
   }
 }
