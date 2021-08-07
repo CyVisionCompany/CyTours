@@ -14,6 +14,11 @@ body {
 a {
   text-decoration: none; }
 
+.heading-primary {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  background-image: linear-gradient(to right); }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -39,3 +44,12 @@ a {
     .header__button--signup {
       border-radius: 100px;
       border: #ffffff solid 2px; }
+
+.main {
+  background-color: #F7F7F7; }
+  .main__login {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    height: 100vh;
+    align-items: center; }
