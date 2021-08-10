@@ -27,7 +27,7 @@ a {
   color: transparent; }
 
 .button {
-  padding: 1rem 3.5rem;
+  padding: 1.2rem 3rem;
   border-radius: 100px;
   border: none;
   background-color: #55c57a;
@@ -236,30 +236,30 @@ a {
       font-size: 1.4rem;
       text-transform: uppercase;
       margin-left: 0.3rem; }
-  .footer__content__links {
+  .footer__list {
     display: flex;
     list-style: none; }
     @media only screen and (max-width: 43.75em) {
-      .footer__content__links {
+      .footer__list {
         margin: 1rem 0; } }
-    .footer__content__links__link {
-      padding: 0.5rem;
-      font-size: 1.4rem;
-      color: #777777; }
-      @media only screen and (max-width: 37.5em) {
-        .footer__content__links__link {
-          font-size: 1rem; } }
-  .footer__content__copyright {
+  .footer__item {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    color: #777777; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__item {
+        font-size: 1rem; } }
+  .footer__copyright {
     padding: 0.5rem;
     display: flex;
     color: #999999;
     font-size: 1.4rem;
     justify-content: flex-end; }
     @media only screen and (max-width: 43.75em) {
-      .footer__content__copyright {
+      .footer__copyright {
         justify-content: center; } }
     @media only screen and (max-width: 37.5em) {
-      .footer__content__copyright {
+      .footer__copyright {
         font-size: 1rem; } }
 
 .header {
