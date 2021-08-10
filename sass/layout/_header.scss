@@ -21,11 +21,16 @@
 
   &__logo {
     width: 0;
+    margin-left: 5%;
+    @include responsive(phone) {
+      margin-left: 0;
+    }
   }
 
   &__img {
     height: 3.5rem;
     width: 6.8rem;
+    
     @include responsive(phone) {
       height: 2.5rem;
       width: 5rem;
