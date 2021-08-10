@@ -1,8 +1,8 @@
 .card {
   width: 32rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0 , 0.1);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
   @include responsive(small-phone) {
-    width: 20rem;
+    width: 28rem;
   }
   &__header {
     height: 16.082rem;
@@ -186,8 +186,6 @@
       }
     }
 
-    &__icon {
-    }
     &-span {
       margin-left: 1rem;
       color: $color-text;
@@ -220,7 +218,7 @@
     &__button {
       @include responsive(small-phone) {
         font-size: 1rem;
-        padding: 0 1rem;
+        padding: 0 3rem;
       }
     }
   }
