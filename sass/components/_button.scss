@@ -1,0 +1,22 @@
+.button {
+  padding: 1rem 3.5rem;
+  border-radius: 100px;
+  border: none;
+  background-color: $color-secondary;
+  color: $color-background;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.8rem 1.6rem rgba($color-black, 0.15);
+  }
+
+  &:focus {
+    transform: translateY(-1px);
+    background-color: $color-secondary-dark;
+    box-shadow: 0 0.4rem 0.6rem rgba($color-black, 0.25);
+  }
+}

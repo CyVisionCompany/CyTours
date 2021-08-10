@@ -26,6 +26,24 @@ a {
   -webkit-background-clip: text;
   color: transparent; }
 
+.button {
+  padding: 1rem 3.5rem;
+  border-radius: 100px;
+  border: none;
+  background-color: #55c57a;
+  color: #f7f7f7;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s; }
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15); }
+  .button:focus {
+    transform: translateY(-1px);
+    background-color: #3a9a5a;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.25); }
+
 .form {
   padding: 5rem 7rem;
   width: 60rem;
@@ -60,22 +78,6 @@ a {
       border-bottom: #fe6813 3px solid; }
     .form__input::placeholder {
       color: #999999; }
-  .form__button {
-    padding: 1rem 3.5rem;
-    border-radius: 100px;
-    border: none;
-    background-color: #55c57a;
-    color: #f7f7f7;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    transition: all 0.3s; }
-    .form__button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15); }
-    .form__button:focus {
-      transform: translateY(-1px);
-      background-color: #3a9a5a;
-      box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.25); }
 
 .footer {
   background-color: #f7f7f7;
@@ -157,9 +159,17 @@ a {
       .header__button {
         font-size: 1rem;
         padding: 0.5rem 1.5rem; } }
+    .header__button--login {
+      transition: transform 0.3s; }
+      .header__button--login:hover {
+        transform: translateY(-5px); }
     .header__button--signup {
       border-radius: 100px;
-      border: #ffffff solid 1px; }
+      border: #ffffff solid 1px;
+      transition: all 0.3s; }
+      .header__button--signup:hover {
+        background-color: #ffffff;
+        color: #000; }
 
 .main {
   background-color: #f7f7f7; }
