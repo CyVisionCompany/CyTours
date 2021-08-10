@@ -229,13 +229,13 @@ a {
   .footer__logo {
     display: flex;
     align-items: center; }
-  .footer__logo-text {
-    background-image: linear-gradient(to right, #7cd46f, #2ab586);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    margin-left: 0.3rem; }
+    .footer__logo-span {
+      background-image: linear-gradient(to right, #7cd46f, #2ab586);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      margin-left: 0.3rem; }
   .footer__content__links {
     display: flex;
     list-style: none; }

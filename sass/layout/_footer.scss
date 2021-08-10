@@ -12,13 +12,13 @@
   &__logo {
     display: flex;
     align-items: center;
-  }
 
-  &__logo-text {
-    @include primary-grediant;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    margin-left: 0.3rem;
+    &-span {
+      @include primary-grediant;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      margin-left: 0.3rem;
+    }
   }
 
   &__content {

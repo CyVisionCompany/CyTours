@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
+    <link href="css/fonts.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -89,6 +86,7 @@
               name="password"
               required
               minlength="8"
+              placeholder="••••••••"
             />
           </div>
 
@@ -103,10 +101,11 @@
               name="confirm-password"
               required
               minlength="8"
+              placeholder="••••••••"
             />
           </div>
 
-          <button class="button" name="submit">sign up</button>
+          <button class="button" name="submit">sign-up</button>
         </form>
       </section>
     </main>
@@ -118,18 +117,22 @@
           alt="logo"
           class="footer__img"
         />
-        <p class="footer__logo-text">natours</p>
+        <p class="footer__logo-span">natours</p>
       </div>
       <div class="footer__content">
-        <div class="footer__content__links">
-          <a href="#" class="footer__content__links__link">About us</a>
-          <a href="#" class="footer__content__links__link">Download apps</a>
-          <a href="#" class="footer__content__links__link">Become a guid</a>
-          <a href="#" class="footer__content__links__link">Careers</a>
-          <a href="#" class="footer__content__links__link">Contact</a>
-        </div>
+        <ul class="footer__content__links">
+          <li><a href="#" class="footer__content__links__link">About us</a></li>
+          <li>
+            <a href="#" class="footer__content__links__link">Download apps</a>
+          </li>
+          <li>
+            <a href="#" class="footer__content__links__link">Become a guid</a>
+          </li>
+          <li><a href="#" class="footer__content__links__link">Careers</a></li>
+          <li><a href="#" class="footer__content__links__link">Contact</a></li>
+        </ul>
         <div class="footer__content__copyright">
-          &COPY; 2021 bt jonas schmedtmann
+          &COPY; 2021 by jonas schmedtmann
         </div>
       </div>
     </footer>
