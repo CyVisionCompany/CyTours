@@ -87,10 +87,9 @@ a {
       bottom: -1rem;
       right: 2rem;
       width: 75%;
-      text-align: center; }
+      text-align: right; }
     .card__header-span {
-      padding: 0.5rem 4rem;
-      padding-right: 8rem;
+      padding: 0.5rem;
       line-height: 4rem;
       background-image: linear-gradient(270deg, rgba(7, 166, 54, 0.86), rgba(35, 233, 93, 0.4902)); }
   .card__main {
