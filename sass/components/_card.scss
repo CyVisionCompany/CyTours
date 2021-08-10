@@ -1,0 +1,154 @@
+.card {
+  width: 32rem;
+  &__header {
+    height: 16.082rem;
+    width: 32rem;
+    position: relative;
+    &__picture {
+      &--1 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image2.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
+      &--2 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image4.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
+      &--3 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image5.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
+      &--4 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image6.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
+    }
+
+    &-text {
+      font-size: 2.8rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $color-white;
+      position: absolute;
+      bottom: -1rem;
+      right: 2rem;
+      width: 75%;
+      text-align: center;
+    }
+    &-span {
+      padding: 0.5rem 4rem;
+      padding-right: 8rem;
+      line-height: 4rem;
+      background-image: linear-gradient(
+        270deg,
+        rgba($color-card-text-primary, 0.86),
+        rgba($color-card-text-secondary, 0.4902)
+      );
+    }
+  }
+
+  &__main {
+    margin-top: -1.5rem;
+    background-color: $color-white;
+    padding: 2rem 1.6rem;
+    &__heading {
+      margin-top: 2.3rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 2.56rem;
+      color: $color-text;
+      text-align: right;
+    }
+
+    &__description {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      letter-spacing: -0.005em;
+      text-transform: capitalize;
+      color: $color-text;
+    }
+
+    &__table {
+      margin-top: 3.1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.85rem;
+      &__cell {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__icon {
+    }
+    &-span {
+      margin-left: 1rem;
+      color: $color-text;
+      font-weight: 300;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  &__footer {
+    padding: 2rem 1.6rem;
+    background-color: $color-background;
+    display: flex;
+    justify-content: space-between;
+    &__price {
+      color: $color-text;
+      &-span {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+      }
+      &-span--text {
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        letter-spacing: -0.005em;
+        text-transform: lowercase;
+      }
+    }
+    &__button {
+    }
+  }
+}

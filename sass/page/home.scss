@@ -1,0 +1,9 @@
+.card__section {
+  background-color: $color-background-main;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem,1fr));
+  grid-gap: 2.8rem;
+  padding: 16.4rem 7.4rem;
+  justify-items: center;
+}
