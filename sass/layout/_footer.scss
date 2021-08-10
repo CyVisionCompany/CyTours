@@ -24,7 +24,7 @@
   &__content {
     &__links {
       display: flex;
-
+      list-style: none;
       @include responsive(tablet) {
         margin: 1rem 0;
       }
