@@ -2,21 +2,41 @@
   padding: 1.2rem 3rem;
   border-radius: 100px;
   border: none;
-  background-color: $color-secondary;
-  color: $color-background;
+  font-weight: 400;
   font-size: 1.6rem;
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s;
 
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0.8rem 1.6rem rgba($color-black, 0.15);
-  }
+  &--primary {
+    background-color: $color-secondary;
+    color: $color-background;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0.8rem 1.6rem rgba($color-black, 0.15);
+    }
 
-  &:focus {
-    transform: translateY(-1px);
-    background-color: $color-secondary-dark;
-    box-shadow: 0 0.4rem 0.6rem rgba($color-black, 0.25);
+    &:focus {
+      transform: translateY(-1px);
+      background-color: $color-secondary-dark;
+      box-shadow: 0 0.4rem 0.6rem rgba($color-black, 0.25);
+    }
+  }
+  &--login {
+    transition: transform 0.3s;
+    color: $color-white;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  &--signup {
+    border-radius: 100px;
+    border: $color-white solid 1px;
+    transition: all 0.3s;
+    color: $color-white;
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+    }
   }
 }

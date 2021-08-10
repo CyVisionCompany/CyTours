@@ -30,19 +30,34 @@ a {
   padding: 1.2rem 3rem;
   border-radius: 100px;
   border: none;
-  background-color: #55c57a;
-  color: #f7f7f7;
+  font-weight: 400;
   font-size: 1.6rem;
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s; }
-  .button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15); }
-  .button:focus {
-    transform: translateY(-1px);
-    background-color: #3a9a5a;
-    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.25); }
+  .button--primary {
+    background-color: #55c57a;
+    color: #f7f7f7; }
+    .button--primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15); }
+    .button--primary:focus {
+      transform: translateY(-1px);
+      background-color: #3a9a5a;
+      box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.25); }
+  .button--login {
+    transition: transform 0.3s;
+    color: #ffffff; }
+    .button--login:hover {
+      transform: translateY(-5px); }
+  .button--signup {
+    border-radius: 100px;
+    border: #ffffff solid 1px;
+    transition: all 0.3s;
+    color: #ffffff; }
+    .button--signup:hover {
+      background-color: #ffffff;
+      color: #000; }
 
 .card {
   width: 32rem;
@@ -179,8 +194,7 @@ a {
         text-transform: lowercase; }
     @media only screen and (max-width: 23.45em) {
       .card__footer__button {
-        font-size: 1rem;
-        padding: 0 3rem; } }
+        font-size: 1.3rem; } }
 
 .form {
   padding: 5rem 7rem;
@@ -294,29 +308,14 @@ a {
       .header__img {
         display: none; } }
   .header__button {
-    font-size: 1.6rem;
     list-style: none;
     display: flex;
     align-items: center;
-    color: #ffffff;
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    font-weight: 400; }
+    padding: 1rem 3rem; }
     @media only screen and (max-width: 37.5em) {
       .header__button {
         font-size: 1rem;
         padding: 0.5rem 1.5rem; } }
-    .header__button--login {
-      transition: transform 0.3s; }
-      .header__button--login:hover {
-        transform: translateY(-5px); }
-    .header__button--signup {
-      border-radius: 100px;
-      border: #ffffff solid 1px;
-      transition: all 0.3s; }
-      .header__button--signup:hover {
-        background-color: #ffffff;
-        color: #000; }
 
 .main {
   height: 100%;
