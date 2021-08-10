@@ -78,6 +78,48 @@ a {
       height: 16.082rem;
       width: 32rem;
       background-size: cover; }
+    .card__header__picture--5 {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      border-radius: 3px 3px 0px 0px;
+      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image7.jpg);
+      height: 16.082rem;
+      width: 32rem;
+      background-size: cover; }
+    .card__header__picture--6 {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      border-radius: 3px 3px 0px 0px;
+      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image8.jpg);
+      height: 16.082rem;
+      width: 32rem;
+      background-size: cover; }
+    .card__header__picture--7 {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      border-radius: 3px 3px 0px 0px;
+      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image9.jpg);
+      height: 16.082rem;
+      width: 32rem;
+      background-size: cover; }
+    .card__header__picture--8 {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      border-radius: 3px 3px 0px 0px;
+      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image10.jpg);
+      height: 16.082rem;
+      width: 32rem;
+      background-size: cover; }
+    .card__header__picture--9 {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      border-radius: 3px 3px 0px 0px;
+      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image11.jpg);
+      height: 16.082rem;
+      width: 32rem;
+      background-size: cover; }
+    .card__header__picture--10 {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      border-radius: 3px 3px 0px 0px;
+      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image12.jpg);
+      height: 16.082rem;
+      width: 32rem;
+      background-size: cover; }
     .card__header-text {
       font-size: 2.8rem;
       font-weight: 400;
@@ -86,7 +128,7 @@ a {
       position: absolute;
       bottom: -1rem;
       right: 2rem;
-      width: 75%;
+      width: 70%;
       text-align: right; }
     .card__header-span {
       padding: 0.5rem;
@@ -278,9 +320,12 @@ a {
     padding: 10% 0; }
 
 .card__section {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   grid-gap: 2.8rem;
   padding: 16.4rem 7.4rem;
   justify-items: center; }
+  @media only screen and (max-width: 81.25em) {
+    .card__section {
+      padding: 9rem 3rem; } }

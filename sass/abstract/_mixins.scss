@@ -24,4 +24,9 @@
       @content;
     }
   }
+  @if $break == tabland {
+    @media only screen and (max-width: $br-tabland) {
+      @content;
+    }
+  }
 }

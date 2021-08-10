@@ -57,6 +57,84 @@
         width: 32rem;
         background-size: cover;
       }
+      &--5 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image7.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
+      &--6 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image8.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
+      &--7 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image9.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
+      &--8 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image10.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
+      &--9 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image11.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
+      &--10 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        border-radius: 3px 3px 0px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-card-primary, 0.78) 0%,
+            rgba($color-card-secondary, 0.4758) 100%
+          ),
+          url(../../img/card/image12.jpg);
+        height: 16.082rem;
+        width: 32rem;
+        background-size: cover;
+      }
     }
 
     &-text {
@@ -67,7 +145,7 @@
       position: absolute;
       bottom: -1rem;
       right: 2rem;
-      width: 75%;
+      width: 70%;
       text-align: right;
     }
     &-span {
