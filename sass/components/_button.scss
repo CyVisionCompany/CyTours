@@ -7,6 +7,7 @@
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s;
+  backface-visibility: hidden;
 
   &--primary {
     background-color: $color-secondary;
@@ -22,14 +23,14 @@
       box-shadow: 0 0.4rem 0.6rem rgba($color-black, 0.25);
     }
   }
-  &--login {
+  &--inline {
     transition: transform 0.3s;
     color: $color-white;
     &:hover {
       transform: translateY(-5px);
     }
   }
-  &--signup {
+  &--outline {
     border-radius: 100px;
     border: $color-white solid 1px;
     transition: all 0.3s;

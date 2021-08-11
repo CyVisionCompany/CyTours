@@ -34,7 +34,8 @@ a {
   font-size: 1.6rem;
   cursor: pointer;
   text-transform: uppercase;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  backface-visibility: hidden; }
   .button--primary {
     background-color: #55c57a;
     color: #f7f7f7; }
@@ -45,17 +46,17 @@ a {
       transform: translateY(-1px);
       background-color: #3a9a5a;
       box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.25); }
-  .button--login {
+  .button--inline {
     transition: transform 0.3s;
     color: #ffffff; }
-    .button--login:hover {
+    .button--inline:hover {
       transform: translateY(-5px); }
-  .button--signup {
+  .button--outline {
     border-radius: 100px;
     border: #ffffff solid 1px;
     transition: all 0.3s;
     color: #ffffff; }
-    .button--signup:hover {
+    .button--outline:hover {
       background-color: #ffffff;
       color: #000; }
 
@@ -68,91 +69,44 @@ a {
   .card__header {
     height: 16.082rem;
     position: relative; }
-    .card__header__picture--1 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image2.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header__picture--2 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image4.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header__picture--3 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image5.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header__picture--4 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image6.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header__picture--5 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image7.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header__picture--6 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image8.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header__picture--7 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image9.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header__picture--8 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image10.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header__picture--9 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image11.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header__picture--10 {
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      border-radius: 3px 3px 0px 0px;
-      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%), url(../../img/card/image12.jpg);
-      height: 16.082rem;
-      background-size: cover; }
-    .card__header-text {
-      font-size: 2.8rem;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: #ffffff;
-      position: absolute;
-      bottom: -1rem;
-      right: 2rem;
-      width: 70%;
-      text-align: right; }
-    .card__header-span {
+  .card__picture {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    border-radius: 3px 3px 0px 0px;
+    background-size: cover; }
+    .card__picture-overlay {
+      background-image: linear-gradient(to right, rgba(56, 193, 100, 0.78) 0%, rgba(12, 182, 68, 0.4758) 100%);
+      height: 100%;
+      width: 100%;
+      position: absolute; }
+    .card__picture-img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
+  .card__title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: absolute;
+    bottom: -1rem;
+    right: 2rem;
+    width: 70%;
+    text-align: right; }
+    .card__title > span {
       padding: 0.5rem;
       line-height: 4rem;
       background-image: linear-gradient(270deg, rgba(7, 166, 54, 0.86), rgba(35, 233, 93, 0.4902)); }
+  .card__sub-title {
+    margin-top: 2.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2.56rem;
+    color: #777777; }
   .card__main {
     margin-top: -1.5rem;
     background-color: #ffffff;
     padding: 2rem 1.6rem; }
-    .card__main__heading {
-      margin-top: 2.3rem;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 1.2rem;
-      line-height: 2.56rem;
-      color: #777777; }
     .card__main__description {
       font-style: italic;
       font-weight: 300;
@@ -180,21 +134,21 @@ a {
     background-color: #f7f7f7;
     display: flex;
     justify-content: space-between; }
-    .card__footer__price {
-      color: #777777; }
-      .card__footer__price-span {
-        font-weight: 500;
-        font-size: 1.4rem;
-        line-height: 2.6rem; }
-      .card__footer__price-span--text {
-        font-weight: 300;
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        letter-spacing: -0.005em;
-        text-transform: lowercase; }
     @media only screen and (max-width: 23.45em) {
       .card__footer__button {
         font-size: 1.3rem; } }
+  .card__price {
+    color: #777777; }
+    .card__price-span {
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.6rem; }
+    .card__price-span--text {
+      font-weight: 300;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      letter-spacing: -0.005em;
+      text-transform: lowercase; }
 
 .form {
   padding: 5rem 7rem;
@@ -204,7 +158,7 @@ a {
   @media only screen and (max-width: 37.5em) {
     .form {
       padding: 5rem 2rem; } }
-  @media only screen and (max-width: 43.75em) {
+  @media only screen and (max-width: 48em) {
     .form {
       margin: 2.5rem; } }
   .form__group > div {
@@ -237,13 +191,13 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem; }
-  @media only screen and (max-width: 43.75em) {
+  @media only screen and (max-width: 48em) {
     .footer {
       flex-direction: column; } }
   .footer__logo {
     display: flex;
     align-items: center; }
-    .footer__logo-span {
+    .footer__logo-text {
       background-image: linear-gradient(to right, #7cd46f, #2ab586);
       -webkit-background-clip: text;
       color: transparent;
@@ -253,7 +207,7 @@ a {
   .footer__list {
     display: flex;
     list-style: none; }
-    @media only screen and (max-width: 43.75em) {
+    @media only screen and (max-width: 48em) {
       .footer__list {
         margin: 1rem 0; } }
   .footer__item {
@@ -269,7 +223,7 @@ a {
     color: #999999;
     font-size: 1.4rem;
     justify-content: flex-end; }
-    @media only screen and (max-width: 43.75em) {
+    @media only screen and (max-width: 48em) {
       .footer__copyright {
         justify-content: center; } }
     @media only screen and (max-width: 37.5em) {
@@ -320,7 +274,7 @@ a {
 .main {
   height: 100%;
   background-color: #f7f7f7; }
-  .main__login {
+  .main__container {
     display: flex;
     justify-content: center;
     padding: 10% 0; }

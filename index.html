@@ -15,7 +15,9 @@
   <body>
     <header class="header">
       <nav class="header__nav">
-        <p class="header__paragraph">alltours</p>
+        <a href="index.html" class="header__paragraph button button--inline"
+          >alltours</a
+        >
         <a href="#" class="header__logo">
           <picture>
             <source
@@ -35,12 +37,12 @@
         </a>
         <ul class="header__button">
           <li>
-            <a href="login.html" class="header__button button button--login"
+            <a href="login.html" class="header__button button button--inline"
               >log in</a
             >
           </li>
           <li>
-            <a href="sign-up.html" class="header__button button button--signup"
+            <a href="sign-up.html" class="header__button button button--outline"
               >sign up</a
             >
           </li>
@@ -52,13 +54,20 @@
       <section class="card__section">
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--1"></div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">the sea explorer</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image2.jpg"
+                alt="the sea explorer"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>the sea explorer</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">medium 7-day tour</h4>
+            <h4 class="card__sub-title">medium 7-day tour</h4>
             <div class="card__main__description">
               Exploring the jaw-dropping US east coast by foot and by boat
             </div>
@@ -85,28 +94,37 @@
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$497</span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">4.8</span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$497</span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">4.8</span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--2">&nbsp;</div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">the forest hiker</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image4.jpg"
+                alt="THE FOREST HIKER"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>THE FOREST HIKER</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">EASY 5-DAY TOUR</h4>
+            <h4 class="card__sub-title">EASY 5-DAY TOUR</h4>
             <div class="card__main__description">
               Breathtaking hike through the Canadian Banff National Park
             </div>
@@ -116,15 +134,15 @@
                   src="img/card/icon/location.svg"
                   class="card__main__icon"
                 />
-                <span class="card__main-span">Banff, CAN </span>
+                <span class="card__main-span">Banff, CAN</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/calendr.svg" class="card__main__icon" />
-                <span class="card__main-span">April 2021 </span>
+                <span class="card__main-span">April 2021</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/flag.svg" class="card__main__icon" />
-                <span class="card__main-span">4 stops </span>
+                <span class="card__main-span">3 stops </span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/person.svg" class="card__main__icon" />
@@ -133,28 +151,37 @@
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$397</span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">4.9</span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$397 </span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">4.9 </span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--3">&nbsp;</div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">THE PARK CAMPER</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image5.jpg"
+                alt="THE PARK CAMPER"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>THE PARK CAMPER</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">MEDIUM 10-DAY TOUR</h4>
+            <h4 class="card__sub-title">MEDIUM 10-DAY TOUR</h4>
             <div class="card__main__description">
               Breathing in Nature in America's most spectacular National Parks
             </div>
@@ -164,11 +191,11 @@
                   src="img/card/icon/location.svg"
                   class="card__main__icon"
                 />
-                <span class="card__main-span">Las Vegas, USA </span>
+                <span class="card__main-span">Las Vegas, USA</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/calendr.svg" class="card__main__icon" />
-                <span class="card__main-span">August 2021 </span>
+                <span class="card__main-span">August 2021</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/flag.svg" class="card__main__icon" />
@@ -181,28 +208,37 @@
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$1497</span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">4.9</span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$1497 </span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">4.6 </span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--4"></div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">the CITY WANDERER</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image6.jpg"
+                alt="THE CITY WANDERER"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>THE CITY WANDERER</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">EASY 9-DAY TOUR</h4>
+            <h4 class="card__sub-title">EASY 9-DAY TOUR</h4>
             <div class="card__main__description">
               Living the life of Wanderlust in the US' most beatiful cities
             </div>
@@ -212,45 +248,54 @@
                   src="img/card/icon/location.svg"
                   class="card__main__icon"
                 />
-                <span class="card__main-span">NYC, USA </span>
+                <span class="card__main-span">NYC, USA</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/calendr.svg" class="card__main__icon" />
-                <span class="card__main-span">March 2021 </span>
+                <span class="card__main-span">March 2021</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/flag.svg" class="card__main__icon" />
-                <span class="card__main-span">3 stops </span>
+                <span class="card__main-span">3 stops</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/person.svg" class="card__main__icon" />
-                <span class="card__main-span">20 people </span>
+                <span class="card__main-span">20 people</span>
               </div>
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$1197 </span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">4.4 </span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$1197 </span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">4.4</span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--5"></div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">the SNOW ADVENTURER</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image7.jpg"
+                alt="THE SNOW ADVENTURER"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>THE SNOW ADVENTURER</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">DIFFICULT 4-DAY TOUR</h4>
+            <h4 class="card__sub-title">DIFFICULT 4-DAY TOUR</h4>
             <div class="card__main__description">
               Exciting adventure in the snow with snowboarding and skiing
             </div>
@@ -260,7 +305,7 @@
                   src="img/card/icon/location.svg"
                   class="card__main__icon"
                 />
-                <span class="card__main-span">Aspen, USA </span>
+                <span class="card__main-span">Aspen, USA</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/calendr.svg" class="card__main__icon" />
@@ -268,7 +313,7 @@
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/flag.svg" class="card__main__icon" />
-                <span class="card__main-span">2 stops </span>
+                <span class="card__main-span">2 stops</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/person.svg" class="card__main__icon" />
@@ -277,28 +322,37 @@
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$997 </span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">4.4 </span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$997 </span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">4.4 </span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--6"></div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">THE SPORTS LOVER</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image8.jpg"
+                alt="THE SPORTS LOVER"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>THE SPORTS LOVER</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">DIFFICULT 14-DAY TOUR</h4>
+            <h4 class="card__sub-title">DIFFICULT 14-DAY TOUR</h4>
             <div class="card__main__description">
               Surfing, skating, parajumping, rock climbing and more, all in one
               tour
@@ -309,11 +363,11 @@
                   src="img/card/icon/location.svg"
                   class="card__main__icon"
                 />
-                <span class="card__main-span">California, USA </span>
+                <span class="card__main-span">California, USA</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/calendr.svg" class="card__main__icon" />
-                <span class="card__main-span">July 2021 </span>
+                <span class="card__main-span">July 2021</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/flag.svg" class="card__main__icon" />
@@ -321,33 +375,42 @@
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/person.svg" class="card__main__icon" />
-                <span class="card__main-span">8 people </span>
+                <span class="card__main-span">8 people</span>
               </div>
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$2997 </span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">3.9 </span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$2997 </span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">3.9</span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--7"></div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">THE STAr GAZER</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image9.jpg"
+                alt="THE STAR GAZER"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>THE STAR GAZER</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">MEDIUM 9-DAY TOUR</h4>
+            <h4 class="card__sub-title">MEDIUM 9-DAY TOUR</h4>
             <div class="card__main__description">
               The most remote and stunningly beautiful places for seeing the
               night sky
@@ -358,11 +421,11 @@
                   src="img/card/icon/location.svg"
                   class="card__main__icon"
                 />
-                <span class="card__main-span">Utah, USA </span>
+                <span class="card__main-span">Utah, USA</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/calendr.svg" class="card__main__icon" />
-                <span class="card__main-span">March 2021 </span>
+                <span class="card__main-span">March 2021</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/flag.svg" class="card__main__icon" />
@@ -375,28 +438,37 @@
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$2997 </span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">4.8 </span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$2997 </span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">4.8 </span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--8"></div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">the win taster</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image10.jpg"
+                alt="THE WINE TASTER"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>THE WINE TASTER</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">EASY 5-DAY TOUR</h4>
+            <h4 class="card__sub-title">EASY 5-DAY TOUR</h4>
             <div class="card__main__description">
               Exquisite wines, scenic views, exclusive barrel tastings, and much
               more
@@ -407,45 +479,54 @@
                   src="img/card/icon/location.svg"
                   class="card__main__icon"
                 />
-                <span class="card__main-span">California, USA </span>
+                <span class="card__main-span">California, USA</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/calendr.svg" class="card__main__icon" />
-                <span class="card__main-span">February 2021 </span>
+                <span class="card__main-span">February 2021</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/flag.svg" class="card__main__icon" />
-                <span class="card__main-span">3 stops </span>
+                <span class="card__main-span">3 stops</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/person.svg" class="card__main__icon" />
-                <span class="card__main-span">8 people </span>
+                <span class="card__main-span">8 people</span>
               </div>
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$1997 </span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">4.4 </span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$1997 </span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">4.4 </span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--9"></div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">the NORTHERN LIGHTS</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image11.jpg"
+                alt="THE NORTHERN LIGHTS"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>THE NORTHERN LIGHTS</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">EASY 3-DAY TOUR</h4>
+            <h4 class="card__sub-title">EASY 3-DAY TOUR</h4>
             <div class="card__main__description">
               Enjoy the Northern Lights in one of the best places in the world
             </div>
@@ -455,7 +536,7 @@
                   src="img/card/icon/location.svg"
                   class="card__main__icon"
                 />
-                <span class="card__main-span">Yellowknife, CAN </span>
+                <span class="card__main-span">Yellowknife, CAN</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/calendr.svg" class="card__main__icon" />
@@ -467,33 +548,42 @@
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/person.svg" class="card__main__icon" />
-                <span class="card__main-span">12 people </span>
+                <span class="card__main-span">12 people</span>
               </div>
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$1497 </span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">4.7 </span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$1497 </span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">4.7 </span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
         <div class="card">
           <div class="card__header">
-            <div class="card__header__picture--10"></div>
-            <h4 class="card__header-text">
-              <span class="card__header-span">the MOUNTAIN BIKER</span>
+            <div class="card__picture">
+              <div class="card__picture-overlay">&nbsp;</div>
+              <img
+                src="img/card/image12.jpg"
+                alt="THE MOUNTAIN BIKER"
+                class="card__picture-img"
+              />
+            </div>
+            <h4 class="card__title">
+              <span>THE MOUNTAIN BIKER</span>
             </h4>
           </div>
           <div class="card__main">
-            <h4 class="card__main__heading">MEDIUM 5-DAY TOUR</h4>
+            <h4 class="card__sub-title">MEDIUM 5-DAY TOUR</h4>
             <div class="card__main__description">
               Exploring the jaw-dropping US east coast by foot and by boat
             </div>
@@ -503,7 +593,7 @@
                   src="img/card/icon/location.svg"
                   class="card__main__icon"
                 />
-                <span class="card__main-span">miami,USA </span>
+                <span class="card__main-span">Miami, USA</span>
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/calendr.svg" class="card__main__icon" />
@@ -515,22 +605,24 @@
               </div>
               <div class="card__main__table__cell">
                 <img src="img/card/icon/person.svg" class="card__main__icon" />
-                <span class="card__main-span">15 people </span>
+                <span class="card__main-span">10 people </span>
               </div>
             </div>
           </div>
           <div class="card__footer">
-            <div class="card__footer__price">
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">$997 </span>
-                <span class="card__footer__price-span--text">per person</span>
-              </div>
-              <div class="card__footer__price">
-                <span class="card__footer__price-span">4.8 </span>
-                <span class="card__footer__price-span--text">rating (6) </span>
-              </div>
+            <div>
+              <p>
+                <span class="card__price-span">$997 </span>
+                <span class="card__price-span--text">per person</span>
+              </p>
+              <p class="card__rating">
+                <span class="card__price-span">4.8 </span>
+                <span class="card__price-span--text">rating (6) </span>
+              </p>
             </div>
-            <button class="card__footer__button button button--primary">details</button>
+            <button class="card__footer__button button button--primary">
+              details
+            </button>
           </div>
         </div>
       </section>
@@ -543,7 +635,7 @@
           alt="logo"
           class="footer__img"
         />
-        <span class="footer__logo-span">natours</span>
+        <span class="footer__logo-text">natours</span>
       </div>
       <div class="footer__navigation">
         <ul class="footer__list">
