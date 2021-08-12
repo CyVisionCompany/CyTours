@@ -1,0 +1,25 @@
+.card__section {
+  margin: auto;
+  max-width: 192rem;
+  background-color: $color-background-main;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 8rem;
+  @include responsive(huge) {
+    grid-column-gap: 20rem;
+    grid-row-gap: 8rem;
+  }
+  padding: 16.4rem 8rem;
+  @include responsive(tabland) {
+    padding: 9rem 3rem;
+  }
+  @include responsive(small-phone) {
+    padding: 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  justify-items: center;
+}

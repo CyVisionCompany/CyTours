@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/fonts.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>CyTours</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="index.html" class="header__paragraph button button--inline"
+          >alltours</a
+        >
+        <a href="#" class="header__logo">
+          <picture>
+            <source
+              srcset="
+              img/sign-up/logo-md.svg 2x,
+              img/sign-up/logo-sm.svg x1
+              "
+              media="(max-width: 37.5em)"
+            />
+            <img
+              srcset="img/sign-up/logo-2xl.svg 2x,img/sign-up/logo-xl.svg x1"
+              alt="logo"
+              class="header__img"
+              src="img/sign-up/logo-lg.svg"
+            />
+          </picture>
+        </a>
+        <ul class="header__button">
+          <li>
+            <a href="login.html" class="header__button button button--inline"
+              >log in</a
+            >
+          </li>
+          <li>
+            <a href="sign-up.html" class="header__button button button--outline"
+              >sign up</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="main__container">
+        <form class="form form__group" method="#">
+          <p class="heading-primary form__text">log into your account</p>
+
+          <div>
+            <label for="#email" class="form__label">Email Address</label>
+            <input
+              type="email"
+              class="form__input"
+              placeholder="you@example.com"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="#password" class="form__label">Password</label>
+            <input
+              type="password"
+              class="form__input"
+              id="password"
+              name="password"
+              required
+              minlength="8"
+              placeholder="••••••••"
+            />
+          </div>
+
+          <button class="button button--primary" name="submit">login</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img
+          src="img/sign-up/logo-grediant.svg"
+          alt="logo"
+          class="footer__img"
+        />
+        <span class="footer__logo-text">natours</span>
+      </div>
+      <div class="footer__navigation">
+        <ul class="footer__list">
+          <li><a href="#" class="footer__item">About us</a></li>
+          <li>
+            <a href="#" class="footer__item">Download apps</a>
+          </li>
+          <li>
+            <a href="#" class="footer__item">Become a guid</a>
+          </li>
+          <li><a href="#" class="footer__item">Careers</a></li>
+          <li><a href="#" class="footer__item">Contact</a></li>
+        </ul>
+        <div class="footer__copyright">&COPY; 2021 by jonas schmedtmann</div>
+      </div>
+    </footer>
+  </body>
+</html>
