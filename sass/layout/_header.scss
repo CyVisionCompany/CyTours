@@ -1,6 +1,6 @@
 .header {
   height: 85vh;
-  width: 100%;
+  max-width: 100%;
   background-image: linear-gradient(
       to top,
       rgba($color-white, 0),
@@ -10,9 +10,19 @@
   background-size: cover;
   background-position: top;
   position: relative;
-  display: flex;
-  justify-content: space-around;
   padding-top: 41px;
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 3rem;
+    @include respond(tab-port) {
+      padding: 0 !important;
+      justify-content: space-between !important;
+    }
+  }
 
   &__logo-box {
     width: 12.9rem;
@@ -25,10 +35,21 @@
     letter-spacing: normal;
     text-align: left;
     color: $color-white;
+    @include respond(tab-port) {
+      margin-left: 3rem;
+    }
   }
 
   &__menu-box {
     width: 30%;
+    @include respond(tab-port) {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: #333;
+      top: 0;
+      opacity: 0;
+    }
   }
 
   &__menu {
@@ -36,7 +57,18 @@
     display: flex;
     justify-content: space-around;
 
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10rem;
+    }
+
     .menu__item {
+      @include respond(tab-port) {
+        margin: 1.5rem;
+      }
       .menu__link {
         padding-right: 2rem;
         text-decoration: none;
@@ -53,6 +85,10 @@
   }
 
   &__join-box {
+  
+  @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__join {
@@ -89,4 +125,104 @@
       }
     }
   }
+
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    // float: right;
+    padding-top: 1.6rem;
+    // padding: 2.8rem 2rem;
+    position: relative;
+    user-select: none;
+
+    .nav-icon {
+      background-color: $color-white;
+      display: block;
+      height: 0.2rem;
+      position: relative;
+      transition: background-color 0.2s ease-out;
+      width: 1.8rem;
+      z-index: 100;
+
+      &::before,
+      &::after {
+        background-color: $color-white;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+      }
+      &::before {
+        top: 5px;
+      }
+      &::after {
+        top: -5px;
+      }
+    }
+  }
+
+  .hamburger-btn {
+    display: none;
+    .menu-btn {
+      display: none;
+
+    }
+  }
+
+  #hamburger-btn{
+    @include respond(tab-port){
+      display: block;
+      margin-right: 3rem;
+    }
+  }
+
+  .check {
+    span {
+      background-color: transparent !important;
+    }
+    span::before {
+      transform: rotate(-45deg);
+    }
+    span::after {
+      transform: rotate(45deg);
+    }
+    span::before,
+    span::after {
+      top: 0 !important;
+    }
+  }
+  ////////////////////////////////////////////////////////////////////////
+  &__center {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 17rem;
+  }
+
+  &__text {
+    font-size: 3rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: $color-white;
+  }
+
+  &__search {
+    width: 1018px;
+    height: 154px;
+    flex-grow: 0;
+    margin: 2rem auto 0;
+    padding: 22px 20px 23px;
+    background-color: rgba(35, 35, 35, 0.95);
+  }
+}
+
+
+
+.active {
+  opacity: 1;
 }

@@ -10,44 +10,124 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <div class="header__logo-box">
-        <span class="header__logo"> CyTours </span>
-      </div>
+      <nav class="navbar">
+        <div class="header__logo-box">
+          <span class="header__logo"> CyTours </span>
+        </div>
 
-      <nav class="header__menu-box">
-        <ul class="header__menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Booking</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Tours</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Blog</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">About Us</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="hamburger-btn" id="hamburger-btn">
+            <!-- <input type="checkbox" class="menu-btn" id="menu-btn"> -->
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+        </div>
+     
 
-      <div class="header__join-box">
-        <ul class="header__join">
-          <li class="join__item">
-            <a href="#" class="join__link join__link-text">Login</a>
-          </li>
-          <li class="jonin__item">
-            <a href="#" class="join__link join__link-btn">Join</a>
-          </li>
-        </ul>
-      </div>
+        <div class="header__menu-box" id="header-menu">
+          <ul class="header__menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Booking</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Tours</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__join-box">
+          <ul class="header__join">
+            <li class="join__item">
+              <a href="#" class="join__link join__link-text">Login</a>
+            </li>
+            <li class="jonin__item">
+              <a href="#" class="join__link join__link-btn">Join</a>
+            </li>
+          </ul>
+        </div>
+      <!-- <div class="header__top">
+        <div class="header__logo-box">
+          <span class="header__logo"> CyTours </span>
+        </div>
+
+        <div class="header__menu-box">
+          <ul class="header__menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Booking</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Tours</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__join-box">
+          <ul class="header__join">
+            <li class="join__item">
+              <a href="#" class="join__link join__link-text">Login</a>
+            </li>
+            <li class="jonin__item">
+              <a href="#" class="join__link join__link-btn">Join</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!-- <div class="header__center">
+        <span class="header__text">
+          Discover how to get anywhere by plane, train, bus, ferry & car
+        </span>
+
+        <div class="header__search">
+          <div class="search__menu">
+            <ul class="">
+              <li class="search__item">
+                <a href="" class="search__link active">Transport</a>
+              </li>
+              <li class="search__item">
+                <a href="" class="search__link">Tickets</a>
+              </li>
+              <li class="search__item">
+                <a href="" class="search__link">Hotels</a>
+              </li>
+              <li class="search__item">
+                <a href="" class="search__link">Car Hire</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
     </header>
+
+    <script src="javaScript/main.js"></script>
   </body>
 </html>
