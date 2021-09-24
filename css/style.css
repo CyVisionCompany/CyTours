@@ -18,7 +18,7 @@ body {
   height: 30px; }
 
 .header {
-  height: 85vh;
+  height: 100vh;
   max-width: 100%;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(24, 24, 24, 0.8)), url(../img/bg-header.jpg);
   background-size: cover;
@@ -124,7 +124,7 @@ body {
       position: relative;
       transition: background-color 0.2s ease-out;
       width: 1.8rem;
-      z-index: 100; }
+      z-index: 1000; }
       .header .menu-icon .nav-icon::before, .header .menu-icon .nav-icon::after {
         background-color: #fff;
         content: "";
@@ -154,10 +154,19 @@ body {
   .header .check span::before,
   .header .check span::after {
     top: 0 !important; }
+  .header .activee {
+    opacity: 1;
+    z-index: 100; }
   .header__center {
     margin: 0 auto;
     text-align: center;
-    margin-top: 17rem; }
+    margin-top: 23rem;
+    padding: 0 3rem; }
+    @media only screen and (max-width: 75em) {
+      .header__center {
+        width: 95%;
+        padding: 0;
+        margin: 10rem auto 0; } }
   .header__text {
     font-size: 3rem;
     font-weight: 500;
@@ -167,13 +176,176 @@ body {
     letter-spacing: normal;
     text-align: left;
     color: #fff; }
+    @media only screen and (max-width: 75em) {
+      .header__text {
+        font-size: 2.5rem;
+        font-weight: 400; } }
   .header__search {
-    width: 1018px;
-    height: 154px;
+    width: 93%;
+    height: 15.4rem;
     flex-grow: 0;
     margin: 2rem auto 0;
-    padding: 22px 20px 23px;
+    padding: 2.2rem 2rem 2.3rem;
     background-color: rgba(35, 35, 35, 0.95); }
-
-.active {
-  opacity: 1; }
+    @media only screen and (max-width: 75em) {
+      .header__search {
+        background-color: transparent;
+        width: 100%; } }
+  .header .search__menu {
+    margin-bottom: 1.5rem; }
+    @media only screen and (max-width: 75em) {
+      .header .search__menu {
+        display: none; } }
+  .header .search__ul {
+    width: 41rem;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none; }
+  .header .search__item {
+    margin: 0.45rem 2rem; }
+  .header .search__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left; }
+  .header .active {
+    width: 12.2rem;
+    height: 4rem;
+    padding: 0.8rem 2.1rem 0.8rem 2.2rem;
+    border-radius: 4rem;
+    background-color: #144d45; }
+  .header .search__location {
+    float: left;
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    background-color: #fff; }
+    @media only screen and (max-width: 75em) {
+      .header .search__location {
+        flex-direction: column;
+        height: 13rem !important;
+        width: 100% !important; } }
+    .header .search__location--tehran {
+      flex-basis: 47%;
+      text-align: left;
+      padding-left: 0.5rem;
+      margin: 1rem 1.5rem 1rem 0;
+      padding: 0 26.4rem 0 1.8rem; }
+      @media only screen and (max-width: 75em) {
+        .header .search__location--tehran {
+          flex-basis: 47% !important; } }
+      .header .search__location--tehran .Tehran-Iran {
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: rgba(0, 0, 0, 0.6);
+        background-color: #fff; }
+    .header .search__location--line {
+      flex-basis: 6%;
+      position: relative; }
+      @media only screen and (max-width: 75em) {
+        .header .search__location--line {
+          flex-basis: 6% !important; } }
+      .header .search__location--line .line {
+        width: 1px;
+        height: 100%;
+        background-color: #333;
+        position: absolute;
+        left: 50%; }
+        @media only screen and (max-width: 75em) {
+          .header .search__location--line .line {
+            width: 100% !important;
+            height: 1px !important;
+            left: 0 !important; } }
+      .header .search__location--line .replace-icon {
+        width: 3.4rem;
+        height: 3.4rem;
+        border: 1px solid;
+        border-radius: 50%;
+        text-align: center;
+        position: absolute;
+        background-color: #fff;
+        top: 0;
+        margin: 8px 6px; }
+        @media only screen and (max-width: 75em) {
+          .header .search__location--line .replace-icon {
+            margin: 0 !important;
+            top: -300% !important;
+            right: 5 !important; } }
+        .header .search__location--line .replace-icon i {
+          font-size: 1.6rem;
+          margin: 0.8rem; }
+    .header .search__location--berlin {
+      flex-basis: 47%;
+      text-align: right;
+      margin: 1rem 1.5rem 1rem 0;
+      padding: 0 22.4rem 0 1.8rem; }
+      @media only screen and (max-width: 75em) {
+        .header .search__location--berlin {
+          flex-basis: 47% !important;
+          text-align: left !important; } }
+      .header .search__location--berlin .Berlin-Germany {
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: rgba(0, 0, 0, 0.6);
+        background-color: #fff; }
+  .header .search__btn {
+    float: left;
+    margin-left: 1.5rem;
+    width: 11.1rem;
+    height: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .header .search__btn {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-top: 0.8rem !important; } }
+    .header .search__btn .btn-search {
+      width: 100%;
+      height: 100%;
+      background-color: #144d45;
+      border: none; }
+      .header .search__btn .btn-search i {
+        font-size: 2.2rem; }
+        .header .search__btn .btn-search i img {
+          width: 2.4rem; }
+      .header .search__btn .btn-search span {
+        font-size: 1.6rem;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left; }
+  .header__buttom {
+    width: 100%;
+    justify-self: flex-end;
+    align-self: flex-end; }
+    @media only screen and (max-width: 56.25em) {
+      .header__buttom {
+        display: none; } }
+  .header__location {
+    background-color: #144d45;
+    width: 69px;
+    height: 35px;
+    position: absolute;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    right: 0;
+    bottom: 0; }
+    .header__location img {
+      width: 1.4rem; }
+    .header__location span {
+      font-size: 1.2rem;
+      color: rgba(24, 24, 24, 0.8); }
