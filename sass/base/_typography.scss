@@ -1,0 +1,15 @@
+.headline{
+    padding: 5rem;
+    margin: 0 auto;
+    font-size: 3.4rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-primary;
+    span{
+        text-align: center;
+    }
+}

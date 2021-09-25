@@ -1,0 +1,7 @@
+.section__features{
+    padding:  2rem 20rem;
+    margin-top: 1.2rem;
+    @include respond(tab-land){
+        padding: 1rem 5rem;
+    }
+}

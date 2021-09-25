@@ -12,15 +12,19 @@
   position: relative;
   padding-top: 41px;
 
+  //HEADER TOP(NAV)
   .navbar {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    // position: fixed;
     padding: 0 3rem;
     @include respond(tab-port) {
       padding: 0 !important;
       justify-content: space-between !important;
+      position: fixed;
+      z-index: 10000;
     }
   }
 
@@ -125,9 +129,7 @@
   .menu-icon {
     cursor: pointer;
     display: inline-block;
-    // float: right;
     padding-top: 1.6rem;
-    // padding: 2.8rem 2rem;
     position: relative;
     user-select: none;
 
@@ -192,7 +194,8 @@
     opacity: 1;
     z-index: 100;
   }
-  ////////////////////////////////////////////////////////////////////////
+
+  //HEADER CENTER(SEARCH)
   &__center {
     margin: 0 auto;
     text-align: center;
@@ -352,7 +355,7 @@
       margin: 1rem 1.5rem 1rem 0;
       padding: 0 22.4rem 0 1.8rem;
 
-      @include respond(tab-land){
+      @include respond(tab-land) {
         flex-basis: 47% !important;
         text-align: left !important;
       }
@@ -374,7 +377,7 @@
     margin-left: 1.5rem;
     width: 11.1rem;
     height: 5rem;
-    @include respond(tab-land){
+    @include respond(tab-land) {
       width: 100% !important;
       margin-left: 0 !important;
       margin-top: 0.8rem !important;
@@ -403,13 +406,13 @@
     }
   }
 
-  ////////////////////////////////
+  //HEADER BUTTOM(LOCATION)
   &__buttom {
     width: 100%;
     justify-self: flex-end;
     align-self: flex-end;
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
       display: none;
     }
   }
@@ -433,62 +436,4 @@
       color: rgba($color-black, 0.8);
     }
   }
-}
-// @media only screen and (max-width: 1200px) {
-//   .header__center {
-//     width: 95%;
-//     padding: 0;
-//     margin: 10rem auto 0;
-//   }
-
-//   .header__text {
-//     font-size: 2.5rem;
-//     font-weight: 400;
-//   }
-
-//   .header__search {
-//     background-color: transparent;
-//     width: 100%;
-//   }
-//   .search__menu {
-//     display: none;
-//   }
-//   .search__location {
-//     flex-direction: column;
-//     height: 13rem !important;
-//     width: 100% !important;
-
-//     &--tehran {
-//       flex-basis: 47% !important;
-//     }
-
-//     &--line {
-//       flex-basis: 6% !important;
-//       .line {
-//         width: 100% !important;
-//         height: 1px !important;
-//         left: 0 !important;
-//       }
-//       .replace-icon {
-//         margin: 0 !important;
-//         top: -300% !important;
-//         right: 5 !important;
-//       }
-//     }
-//     &--berlin {
-//       flex-basis: 47% !important;
-//       text-align: left !important;
-//     }
-//   }
-
-//   .search__btn {
-//     width: 100% !important;
-//     margin-left: 0 !important;
-//     margin-top: 0.8rem !important;
-//   }
-// }
-
-@media only screen and (max-width: 900px) {
-}
-@media only screen and (max-width: 900px) {
 }

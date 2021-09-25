@@ -21,7 +21,9 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- HEADER START -->
     <header class="header">
+      <!-- HEADER NAV  -->
       <nav class="navbar">
         <div class="header__logo-box">
           <span class="header__logo"> CyTours </span>
@@ -65,6 +67,7 @@
         </div>
       </nav>
 
+      <!-- HEADER SEARCH  -->
       <div class="header__center">
         <span class="header__text">
           Discover how to get anywhere by plane, train, bus, ferry & car
@@ -112,6 +115,7 @@
         </div>
       </div>
 
+      <!-- HEADER LOCATION  -->
       <div class="header__buttom">
         <div class="header__location">
           <img
@@ -121,6 +125,111 @@
         </div>
       </div>
     </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START  -->
+    <main>
+      <!-- main features  -->
+      <section class="section__features">
+        <div class="features-text headline">
+          <span>Our Features</span>
+        </div>
+
+        <div class="features-cards">
+          <div class="features__card">
+            <div class="features__card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="51"
+                height="27"
+                viewBox="0 0 51 27"
+                fill="none"
+                class="camera"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M40.4854 3.71436H45.6939C46.7984 3.71436 47.6939 4.60979 47.6939 5.71435V9.91603C44.4131 11.0654 40.1235 8.56114 40.4854 3.71436ZM37.4842 3.71436H5C3.89543 3.71436 3 4.60979 3 5.71436V16.584C7.70358 14.9752 13.3735 18.0413 14.1325 24.0001H45.6939C46.7984 24.0001 47.6939 23.1046 47.6939 22.0001V13.0564C42.6522 14.1357 37.1725 10.0542 37.4842 3.71436ZM3 19.8901C5.90377 18.1658 10.3345 19.675 11.1032 24.0001H5C3.89543 24.0001 3 23.1046 3 22.0001V19.8901ZM0 5.71436C0 2.95293 2.23858 0.714355 5 0.714355H45.6939C48.4553 0.714355 50.6939 2.95293 50.6939 5.71435V22.0001C50.6939 24.7615 48.4553 27.0001 45.6939 27.0001H5C2.23858 27.0001 0 24.7615 0 22.0001V5.71436ZM29.9527 13.8571C29.9527 15.4335 28.3174 17.4285 25.3487 17.4285C22.3799 17.4285 20.7446 15.4335 20.7446 13.8571C20.7446 12.2807 22.3799 10.2856 25.3487 10.2856C28.3174 10.2856 29.9527 12.2807 29.9527 13.8571ZM32.9527 13.8571C32.9527 17.4864 29.5483 20.4285 25.3487 20.4285C21.149 20.4285 17.7446 17.4864 17.7446 13.8571C17.7446 10.2278 21.149 7.28564 25.3487 7.28564C29.5483 7.28564 32.9527 10.2278 32.9527 13.8571Z"
+                  fill="black"
+                />
+              </svg>
+              <div class="bg-camera"></div>
+            </div>
+
+            <div class="features__card-title">
+              <span> Ultimate flexibility </span>
+            </div>
+
+            <div class="features__card-text">
+              <span>
+                You’re in control, with free cancellation and payment options to
+                satisfy any plan or budget.
+              </span>
+            </div>
+          </div>
+
+          <div class="features__card">
+            <div class="features__card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="34"
+                viewBox="0 0 24 34"
+                fill="none"
+                class="ballon"
+              >
+                <path
+                  d="M10.5 33.25C8.85 33.25 7.5 31.9 7.5 30.25V27.25H16.5V30.25C16.5 31.9 15.15 33.25 13.5 33.25H10.5ZM12 3.25C12.42 3.25 12.825 3.25 13.215 3.325C14.13 5.08 15 8.14 15 12.25C15 15.4 13.5 22.75 13.5 22.75H10.5C10.5 22.75 9 15.4 9 12.25C9 8.14 9.87 5.08 10.785 3.325C11.175 3.25 11.58 3.25 12 3.25ZM12 0.25C10.935 0.25 9.915 0.385 8.925 0.64C7.17 2.995 6 7.315 6 12.25C6 15.67 6.57 18.805 7.5 22.75C7.5 24.4 8.85 25.75 10.5 25.75H13.5C15.15 25.75 16.5 24.4 16.5 22.75C17.43 18.805 18 15.67 18 12.25C18 7.315 16.83 2.995 15.075 0.64C14.085 0.385 13.065 0.25 12 0.25ZM0 10.75C0 15.52 2.775 22.63 6.81 24.565C6 23.065 5.415 20.755 5.01 18.25C3.825 16.045 3 13.18 3 10.75C3 8.74 3.66 7.255 5.205 5.95C5.595 4.255 6.135 2.725 6.81 1.435C2.775 3.37 0 5.98 0 10.75ZM17.19 1.435C17.865 2.725 18.405 4.255 18.795 5.95C20.34 7.255 21 8.74 21 10.75C21 13.18 20.175 16.045 18.99 18.25C18.585 20.755 18 23.065 17.19 24.565C21.225 22.63 24 15.52 24 10.75C24 5.98 21.225 3.37 17.19 1.435Z"
+                  fill="black"
+                />
+              </svg>
+              <div class="bg-ballon"></div>
+            </div>
+
+            <div class="features__card-title">
+              <span>Memorable experiences</span>
+            </div>
+
+            <div class="features__card-text">
+              <span>
+                Browse and book tours and activities so incredible, you’ll want to tell your friends.
+              </span>
+            </div>
+          </div>
+
+          <div class="features__card">
+            <div class="features__card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="34"
+                viewBox="0 0 30 34"
+                fill="none"
+                class="core"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.3103 3H5C3.89543 3 3 3.89543 3 5V29C3 30.1046 3.89543 31 5 31H24.3103C25.4149 31 26.3103 30.1046 26.3103 29V5C26.3103 3.89543 25.4149 3 24.3103 3ZM5 0C2.23858 0 0 2.23858 0 5V29C0 31.7614 2.23857 34 5 34H24.3103C27.0718 34 29.3103 31.7614 29.3103 29V5C29.3103 2.23858 27.0718 0 24.3103 0H5ZM14.6552 8.3857L12.8056 10.7496C12.2818 11.4192 11.5582 11.9044 10.7399 12.1349L8.18664 12.8542L9.5955 14.564C10.1976 15.2947 10.521 16.2153 10.5081 17.1621L10.4751 19.5922L13.4835 18.6706C14.2471 18.4367 15.0632 18.4367 15.8268 18.6706L18.8353 19.5922L18.8022 17.1621C18.7893 16.2153 19.1127 15.2947 19.7148 14.564L21.1237 12.8542L18.5704 12.1349C17.7521 11.9044 17.0286 11.4192 16.5047 10.7496L14.6552 8.3857ZM15.4428 4.52385C15.0424 4.01213 14.268 4.01213 13.8676 4.52385L10.4429 8.90097C10.3119 9.06836 10.131 9.18967 9.92645 9.2473L4.42262 10.7978C3.72757 10.9936 3.46282 11.8389 3.92202 12.3962L7.28025 16.4717C7.43078 16.6544 7.51163 16.8846 7.5084 17.1213L7.438 22.2944C7.42877 22.9724 8.08256 23.4628 8.73081 23.2642L14.3623 21.539C14.5532 21.4806 14.7572 21.4806 14.9481 21.539L20.5795 23.2642C21.2278 23.4628 21.8816 22.9724 21.8723 22.2944L21.8019 17.1213C21.7987 16.8846 21.8796 16.6544 22.0301 16.4717L25.3883 12.3962C25.8475 11.8389 25.5828 10.9936 24.8877 10.7978L19.3839 9.2473C19.1793 9.18967 18.9984 9.06836 18.8675 8.90097L15.4428 4.52385ZM5.86207 26.3103V29.3103H23.4483V26.3103H5.86207Z"
+                  fill="black"
+                />
+              </svg>
+              <div class="bg-core"></div>
+            </div>
+
+            <div class="features__card-title">
+              <span>Quality at our core</span>
+            </div>
+
+            <div class="features__card-text">
+              <span>
+                High quality standards. Millions of reviews. A Tripadvisor company.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="javaScript/main.js"></script>
   </body>

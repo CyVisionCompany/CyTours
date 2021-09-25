@@ -3,7 +3,11 @@
 @import "abstract/variables";
 
 @import "base/base";
+@import "base/typography";
 
 @import "components/buttons";
+@import "components/feature-card";
 
 @import "layout/header";
+
+@import "pages/home"
