@@ -17,111 +17,114 @@
       integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+      />
+      <link href="/tailwind.css" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
     <!-- HEADER START -->
     <header class="header">
-      <!-- HEADER NAV  -->
-      <nav class="navbar">
-        <div class="header__logo-box">
-          <span class="header__logo"> CyTours </span>
-        </div>
+      <div>
+        <!-- HEADER NAV  -->
+        <nav class="navbar">
+          <div class="header__logo-box">
+            <span class="header__logo">CyTours</span>
+          </div>
 
-        <div class="hamburger-btn" id="hamburger-btn">
-          <label for="menu-btn" class="menu-icon">
-            <span class="nav-icon"></span>
-          </label>
-        </div>
+          <div class="hamburger-btn" id="hamburger-btn">
+            <label for="menu-btn" class="menu-icon">
+              <span class="nav-icon"></span>
+            </label>
+          </div>
 
-        <div class="header__menu-box" id="header-menu">
-          <ul class="header__menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Home</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Booking</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Tours</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Blog</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">About Us</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="header__join-box">
-          <ul class="header__join">
-            <li class="join__item">
-              <a href="#" class="join__link join__link-text">Login</a>
-            </li>
-            <li class="jonin__item">
-              <a href="#" class="join__link join__link-btn">Join</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- HEADER SEARCH  -->
-      <div class="header__center">
-        <span class="header__text">
-          Discover how to get anywhere by plane, train, bus, ferry & car
-        </span>
-
-        <div class="header__search">
-          <div class="search__menu">
-            <ul class="search__ul">
-              <li class="search__item">
-                <a href="" class="search__link active">Transport</a>
+          <div class="header__menu-box" id="header-menu">
+            <ul class="header__menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Home</a>
               </li>
-              <li class="search__item">
-                <a href="" class="search__link">Tickets</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Booking</a>
               </li>
-              <li class="search__item">
-                <a href="" class="search__link">Hotels</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Tours</a>
               </li>
-              <li class="search__item">
-                <a href="" class="search__link">Car Hire</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">About Us</a>
               </li>
             </ul>
           </div>
 
-          <div class="search__location">
-            <div class="search__location--tehran">
-              <span class="Tehran-Iran"> Tehran, Iran </span>
+          <div class="header__join-box">
+            <ul class="header__join">
+              <li class="join__item">
+                <a href="#" class="join__link join__link-text">Login</a>
+              </li>
+              <li class="jonin__item">
+                <a href="#" class="join__link join__link-btn">Join</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- HEADER SEARCH  -->
+        <div class="header__center">
+          <span class="header__text">
+            Discover how to get anywhere by plane, train, bus, ferry & car
+          </span>
+
+          <div class="header__search">
+            <div class="search__menu">
+              <ul class="search__ul">
+                <li class="search__item">
+                  <a href="" class="search__link active">Transport</a>
+                </li>
+                <li class="search__item">
+                  <a href="" class="search__link">Tickets</a>
+                </li>
+                <li class="search__item">
+                  <a href="" class="search__link">Hotels</a>
+                </li>
+                <li class="search__item">
+                  <a href="" class="search__link">Car Hire</a>
+                </li>
+              </ul>
             </div>
-            <div class="search__location--line">
-              <div class="line"></div>
-              <div class="replace-icon">
-                <i class="fa fa-exchange-alt" aria-hidden="true"></i>
+
+            <div class="search__location">
+              <div class="search__location--tehran">
+                <span class="Tehran-Iran">Tehran, Iran</span>
+              </div>
+              <div class="search__location--line">
+                <div class="line"></div>
+                <div class="replace-icon">
+                  <i class="fa fa-exchange-alt" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="search__location--berlin">
+                <span class="Berlin-Germany">Berlin, Germany</span>
               </div>
             </div>
-            <div class="search__location--berlin">
-              <span class="Berlin-Germany"> Berlin, Germany </span>
+
+            <div class="search__btn">
+              <button type="submit" class="btn-search">
+                <i class="fa fa-search"></i>
+                <span>Search</span>
+              </button>
             </div>
           </div>
-
-          <div class="search__btn">
-            <button type="submit" class="btn-search">
-              <i class="fa fa-search"></i>
-              <span>Search</span>
-            </button>
-          </div>
         </div>
-      </div>
 
-      <!-- HEADER LOCATION  -->
-      <div class="header__buttom">
-        <div class="header__location">
-          <img
-            src="https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-pin-maps-locations-those-icons-lineal-those-icons.png"
-          />
-          <span>Italy</span>
+        <!-- HEADER LOCATION  -->
+        <div class="header__buttom">
+          <div class="header__location">
+            <img
+              src="https://img.icons8.com/external-those-icons-lineal-those-icons/24/000000/external-pin-maps-locations-those-icons-lineal-those-icons.png"
+            />
+            <span>Italy</span>
+          </div>
         </div>
       </div>
     </header>
@@ -157,7 +160,7 @@
             </div>
 
             <div class="features__card-title">
-              <span> Ultimate flexibility </span>
+              <span>Ultimate flexibility</span>
             </div>
 
             <div class="features__card-text">
@@ -192,7 +195,8 @@
 
             <div class="features__card-text">
               <span>
-                Browse and book tours and activities so incredible, you’ll want to tell your friends.
+                Browse and book tours and activities so incredible, you’ll want
+                to tell your friends.
               </span>
             </div>
           </div>
@@ -223,7 +227,8 @@
 
             <div class="features__card-text">
               <span>
-                High quality standards. Millions of reviews. A Tripadvisor company.
+                High quality standards. Millions of reviews. A Tripadvisor
+                company.
               </span>
             </div>
           </div>
