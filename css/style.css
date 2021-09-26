@@ -106,13 +106,16 @@ body {
     color: rgba(24, 24, 24, 0.75); }
 
 .header {
-  height: 100vh;
   max-width: 100%;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(24, 24, 24, 0.8)), url(../img/bg-header.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
-  padding-top: 41px; }
+  padding-top: 41px;
+  padding-bottom: 192px; }
+  .header * {
+    max-width: 1366px;
+    margin: 0 auto; }
   .header .navbar {
     width: 100%;
     display: flex;

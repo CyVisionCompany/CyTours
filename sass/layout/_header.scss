@@ -1,5 +1,5 @@
 .header {
-  height: 100vh;
+  // height: 100%;
   max-width: 100%;
   background-image: linear-gradient(
       to top,
@@ -11,7 +11,11 @@
   background-position: top;
   position: relative;
   padding-top: 41px;
-
+  padding-bottom: 192px;
+  * {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
   //HEADER TOP(NAV)
   .navbar {
     width: 100%;
