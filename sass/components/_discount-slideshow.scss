@@ -1,0 +1,64 @@
+.discount__slideShow {
+  display: flex;
+  justify-content: space-between;
+
+  .discount__mySlide {
+    flex-basis: 31.5%;
+    // width: 33.6rem;
+    height: 31.5rem;
+    border-radius: 3rem;
+    position: relative;
+    .mySlide__btn-white {
+      position: absolute;
+      top: 20;
+      left: 35;
+      background-color: $color-white;
+      width: 40%;
+      text-align: center;
+      padding: 11px 21px;
+      border-radius: 40px;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+
+    .mySlide__btn-green {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: $color-primary;
+      width: 144px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 50px;
+      
+      span{
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left;
+        color: $color-white;
+      }
+    }
+  }
+
+  .slide-1 {
+    background-image: url("../img/slide-1.jpg");
+  }
+
+  .slide-2{
+    background-image: url("../img/slide-2.jpg");
+  }
+
+  .slide-3{
+    background-image: url("../img/slide-3.jpg");
+  }
+}

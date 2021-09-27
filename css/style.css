@@ -21,7 +21,6 @@ body {
   font-style: normal;
   line-height: 0.88;
   letter-spacing: normal;
-  text-align: center;
   color: #144d45; }
   .headline span {
     text-align: center; }
@@ -104,6 +103,133 @@ body {
     line-height: 1.5;
     letter-spacing: normal;
     color: rgba(24, 24, 24, 0.75); }
+
+.discount__slideShow {
+  display: flex;
+  justify-content: space-between; }
+  .discount__slideShow .discount__mySlide {
+    flex-basis: 31.5%;
+    height: 31.5rem;
+    border-radius: 3rem;
+    position: relative; }
+    .discount__slideShow .discount__mySlide .mySlide__btn-white {
+      position: absolute;
+      top: 20;
+      left: 35;
+      background-color: #fff;
+      width: 40%;
+      text-align: center;
+      padding: 11px 21px;
+      border-radius: 40px; }
+      .discount__slideShow .discount__mySlide .mySlide__btn-white span {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+    .discount__slideShow .discount__mySlide .mySlide__btn-green {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #144d45;
+      width: 144px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 50px; }
+      .discount__slideShow .discount__mySlide .mySlide__btn-green span {
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff; }
+  .discount__slideShow .slide-1 {
+    background-image: url("../img/slide-1.jpg"); }
+  .discount__slideShow .slide-2 {
+    background-image: url("../img/slide-2.jpg"); }
+  .discount__slideShow .slide-3 {
+    background-image: url("../img/slide-3.jpg"); }
+
+.toptours__posts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 37.5em) {
+    .toptours__posts {
+      justify-content: space-around; } }
+  .toptours__posts .toptours__card {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    border: solid 4px #144d45;
+    margin-bottom: 9.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .toptours__posts .toptours__card {
+        margin-bottom: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .toptours__posts .toptours__card {
+        flex-basis: 45%; } }
+    .toptours__posts .toptours__card-img {
+      flex-basis: 72%;
+      width: 100%;
+      transition: all 0.2s; }
+      .toptours__posts .toptours__card-img:hover {
+        transform: translate(17px, 15px); }
+    .toptours__posts .toptours__card-text {
+      flex-basis: 5%;
+      align-self: flex-start;
+      margin-left: 3.5rem;
+      font-size: 16px;
+      font-weight: 500;
+      color: #181818; }
+    .toptours__posts .toptours__card-bottom {
+      flex-basis: 12%;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem; }
+      @media only screen and (max-width: 56.25em) {
+        .toptours__posts .toptours__card-bottom {
+          justify-content: center; } }
+      .toptours__posts .toptours__card-bottom .icon {
+        display: flex;
+        justify-content: center;
+        color: blue;
+        flex-basis: 32%; }
+        @media only screen and (max-width: 56.25em) {
+          .toptours__posts .toptours__card-bottom .icon {
+            font-size: 0.85rem; } }
+        .toptours__posts .toptours__card-bottom .icon i {
+          margin: 0.2rem; }
+      .toptours__posts .toptours__card-bottom span {
+        font-size: 1.6rem;
+        color: rgba(24, 24, 24, 0.7);
+        text-align: center;
+        flex-basis: 30%; }
+        @media only screen and (max-width: 56.25em) {
+          .toptours__posts .toptours__card-bottom span {
+            font-size: 1.2rem; } }
+      .toptours__posts .toptours__card-bottom .toptours__card-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #144d45;
+        color: #fff;
+        border: none;
+        padding: 1rem 3rem;
+        border-radius: 5rem;
+        flex-basis: 30%; }
+        @media only screen and (max-width: 56.25em) {
+          .toptours__posts .toptours__card-bottom .toptours__card-btn {
+            width: 8.3rem;
+            height: 3.2rem; } }
 
 .header {
   height: 100vh;
@@ -443,6 +569,45 @@ body {
 .section__features {
   padding: 2rem 20rem;
   margin-top: 1.2rem; }
+  .section__features .features-text {
+    text-align: center; }
   @media only screen and (max-width: 75em) {
     .section__features {
       padding: 1rem 5rem; } }
+
+.section__discount {
+  padding: 2rem 15rem;
+  margin-top: 1.2rem; }
+
+.section__toptours {
+  padding: 2rem 15rem;
+  margin-top: 1.2rem; }
+  @media only screen and (max-width: 75em) {
+    .section__toptours {
+      padding: 1rem 5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .section__toptours {
+      padding: 0.5rem 1rem; } }
+  .section__toptours .toptours__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .section__toptours .toptours__header .toptours-text {
+      flex-basis: 35%; }
+      @media only screen and (max-width: 75em) {
+        .section__toptours .toptours__header .toptours-text {
+          flex-basis: 100%; } }
+      @media only screen and (max-width: 37.5em) {
+        .section__toptours .toptours__header .toptours-text {
+          flex-basis: 60%; } }
+    .section__toptours .toptours__header .toptours__line {
+      flex-basis: 65%;
+      width: 100%;
+      height: 0.3rem;
+      background-color: rgba(0, 0, 0, 0.02); }
+      @media only screen and (max-width: 75em) {
+        .section__toptours .toptours__header .toptours__line {
+          flex-basis: 50%; } }
+      @media only screen and (max-width: 37.5em) {
+        .section__toptours .toptours__header .toptours__line {
+          display: none; } }
