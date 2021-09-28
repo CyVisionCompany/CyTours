@@ -104,15 +104,22 @@ body {
     letter-spacing: normal;
     color: rgba(24, 24, 24, 0.75); }
 
-.discount__slideShow {
+.discount__posts {
   display: flex;
   justify-content: space-between; }
-  .discount__slideShow .discount__mySlide {
+  .discount__posts .discount__card {
+    background-size: cover;
     flex-basis: 31.5%;
-    height: 31.5rem;
+    height: 50vh;
     border-radius: 3rem;
     position: relative; }
-    .discount__slideShow .discount__mySlide .mySlide__btn-white {
+    @media only screen and (max-width: 56.25em) {
+      .discount__posts .discount__card {
+        height: 40vh; } }
+    @media only screen and (max-width: 37.5em) {
+      .discount__posts .discount__card {
+        height: 25vh; } }
+    .discount__posts .discount__card .discount__btn-white {
       position: absolute;
       top: 20;
       left: 35;
@@ -121,22 +128,33 @@ body {
       text-align: center;
       padding: 11px 21px;
       border-radius: 40px; }
-      .discount__slideShow .discount__mySlide .mySlide__btn-white span {
+      @media only screen and (max-width: 75em) {
+        .discount__posts .discount__card .discount__btn-white {
+          padding: 6px 11px; } }
+      @media only screen and (max-width: 56.25em) {
+        .discount__posts .discount__card .discount__btn-white {
+          padding: 6px 0.2rem;
+          font-size: 0.8rem; } }
+      .discount__posts .discount__card .discount__btn-white span {
         display: flex;
         align-items: center;
         justify-content: space-around; }
-    .discount__slideShow .discount__mySlide .mySlide__btn-green {
+        @media only screen and (max-width: 56.25em) {
+          .discount__posts .discount__card .discount__btn-white span svg {
+            width: 1rem;
+            height: 1rem; } }
+    .discount__posts .discount__card .discount__btn-green {
       position: absolute;
       right: 0;
       bottom: 0;
       background-color: #144d45;
-      width: 144px;
-      height: 60px;
+      width: 42%;
+      height: 18%;
       display: flex;
       justify-content: center;
       align-items: center;
       border-top-left-radius: 50px; }
-      .discount__slideShow .discount__mySlide .mySlide__btn-green span {
+      .discount__posts .discount__card .discount__btn-green span {
         font-size: 14px;
         font-weight: 500;
         font-stretch: normal;
@@ -145,12 +163,34 @@ body {
         letter-spacing: normal;
         text-align: left;
         color: #fff; }
-  .discount__slideShow .slide-1 {
+        @media only screen and (max-width: 75em) {
+          .discount__posts .discount__card .discount__btn-green span {
+            font-size: 1.2rem; } }
+        @media only screen and (max-width: 56.25em) {
+          .discount__posts .discount__card .discount__btn-green span {
+            font-size: 0.95rem; } }
+  .discount__posts .post-1 {
     background-image: url("../img/slide-1.jpg"); }
-  .discount__slideShow .slide-2 {
+  .discount__posts .post-2 {
     background-image: url("../img/slide-2.jpg"); }
-  .discount__slideShow .slide-3 {
+  .discount__posts .post-3 {
     background-image: url("../img/slide-3.jpg"); }
+  .discount__posts .discount__icon {
+    flex-basis: 2%;
+    padding: 1rem;
+    align-self: center;
+    border: 3px solid;
+    border-radius: 50%;
+    position: absolute;
+    right: 125px;
+    background-color: #fff; }
+    @media only screen and (max-width: 75em) {
+      .discount__posts .discount__icon {
+        right: 28px; } }
+    @media only screen and (max-width: 56.25em) {
+      .discount__posts .discount__icon {
+        right: 0.2rem;
+        padding: 0.5rem; } }
 
 .toptours__posts {
   display: flex;
@@ -171,7 +211,11 @@ body {
     margin-bottom: 9.2rem; }
     @media only screen and (max-width: 56.25em) {
       .toptours__posts .toptours__card {
-        margin-bottom: 4rem; } }
+        height: 60vh; } }
+    @media only screen and (max-width: 56.25em) {
+      .toptours__posts .toptours__card {
+        margin-bottom: 4rem;
+        height: 50vh; } }
     @media only screen and (max-width: 37.5em) {
       .toptours__posts .toptours__card {
         flex-basis: 45%; } }
@@ -248,9 +292,7 @@ body {
     @media only screen and (max-width: 56.25em) {
       .header .navbar {
         padding: 0 !important;
-        justify-content: space-between !important;
-        position: fixed;
-        z-index: 10000; } }
+        justify-content: space-between !important; } }
   .header__logo-box {
     width: 12.9rem;
     height: 3.9rem;
@@ -566,6 +608,10 @@ body {
       font-size: 1.2rem;
       color: rgba(24, 24, 24, 0.8); }
 
+.fix {
+  position: fixed;
+  z-index: 10000; }
+
 .section__features {
   padding: 2rem 20rem;
   margin-top: 1.2rem; }
@@ -578,6 +624,12 @@ body {
 .section__discount {
   padding: 2rem 15rem;
   margin-top: 1.2rem; }
+  @media only screen and (max-width: 75em) {
+    .section__discount {
+      padding: 1rem 5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .section__discount {
+      padding: 1rem 2rem; } }
 
 .section__toptours {
   padding: 2rem 15rem;

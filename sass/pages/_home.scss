@@ -12,6 +12,12 @@
 .section__discount{
     padding:  2rem 15rem;
     margin-top: 1.2rem;
+    @include respond(tab-land){
+        padding: 1rem 5rem;
+    }
+    @include respond(tab-port){
+          padding: 1rem 2rem;
+    }
 }
 
 .section__toptours{

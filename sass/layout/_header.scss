@@ -23,9 +23,10 @@
     @include respond(tab-port) {
       padding: 0 !important;
       justify-content: space-between !important;
-      position: fixed;
-      z-index: 10000;
+      // // position: fixed;
+      // z-index: 10000;
     }
+    
   }
 
   &__logo-box {
@@ -436,4 +437,9 @@
       color: rgba($color-black, 0.8);
     }
   }
+}
+
+.fix{
+  position: fixed;
+  z-index: 10000;
 }

@@ -17,7 +17,11 @@
     border: solid 4px $color-primary;
     margin-bottom: 9.2rem;
     @include respond(tab-port){
+      height: 60vh;
+    }
+    @include respond(tab-port){
       margin-bottom: 4rem;
+      height: 50vh;
     } 
     @include respond(phone){
       flex-basis: 45%;

@@ -1,14 +1,20 @@
-.discount__slideShow {
+.discount__posts {
   display: flex;
   justify-content: space-between;
 
-  .discount__mySlide {
+  .discount__card {
+    background-size: cover;
     flex-basis: 31.5%;
-    // width: 33.6rem;
-    height: 31.5rem;
+    height: 50vh;
     border-radius: 3rem;
     position: relative;
-    .mySlide__btn-white {
+    @include respond(tab-port){
+          height: 40vh;
+    }
+    @include respond(phone){
+          height: 25vh;
+    }
+    .discount__btn-white {
       position: absolute;
       top: 20;
       left: 35;
@@ -18,20 +24,35 @@
       padding: 11px 21px;
       border-radius: 40px;
 
+      @include respond(tab-land){
+          padding: 6px 11px;
+      }
+      @include respond(tab-port){
+          padding: 6px 0.2rem;
+          font-size: 0.8rem;
+      }
+
       span {
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        svg{
+          @include respond(tab-port){
+            width: 1rem;
+            height: 1rem;
+          }
+        }
       }
     }
 
-    .mySlide__btn-green {
+    .discount__btn-green {
       position: absolute;
       right: 0;
       bottom: 0;
       background-color: $color-primary;
-      width: 144px;
-      height: 60px;
+      width: 42%;
+      height: 18%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -46,19 +67,44 @@
         letter-spacing: normal;
         text-align: left;
         color: $color-white;
+        @include respond(tab-land){
+          font-size: 1.2rem;
+        }
+        @include respond(tab-port){
+          font-size: 0.95rem;
+        }
       }
     }
   }
 
-  .slide-1 {
+  .post-1 {
     background-image: url("../img/slide-1.jpg");
   }
 
-  .slide-2{
+  .post-2{
     background-image: url("../img/slide-2.jpg");
   }
 
-  .slide-3{
+  .post-3{
     background-image: url("../img/slide-3.jpg");
+  }
+
+  .discount__icon{
+    flex-basis: 2%;
+    padding: 1rem;
+    align-self: center;
+    border: 3px solid;
+    border-radius: 50%;
+    position: absolute;
+    right: 125px;
+    background-color: $color-white;
+    @include respond(tab-land){
+      right: 28px;
+    }
+    @include respond(tab-port){
+          right: 0.2rem;
+          padding: 0.5rem;
+    }
+    
   }
 }
