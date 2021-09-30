@@ -57,3 +57,16 @@
         }
     }
 }
+
+.section__suggestion{
+    padding:  2rem 15rem;
+    margin-top: 1.2rem;
+    height: 100vh;
+    @include respond(tab-land){
+        padding: 1rem 0;
+    }
+    @include respond(tab-port){
+        padding:0;
+    }
+
+}
