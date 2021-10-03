@@ -12,6 +12,16 @@
   position: relative;
   padding-top: 41px;
   padding-bottom: 192px;
+  &-2{
+    background-image: linear-gradient(
+      to top,
+      rgba($color-white, 0),
+      rgba($color-black, 0.8)
+    ),
+    url(../img/bg-header2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
   * {
     max-width: 1366px;
     // margin: 0 auto;
@@ -211,6 +221,10 @@
       padding: 0;
       margin: 10rem auto 0;
     }
+
+    &-2{
+      text-align: left;
+    }
   }
 
   &__text {
@@ -226,6 +240,9 @@
       font-size: 2.5rem;
       font-weight: 400;
     }
+    &-2{
+      margin-left: 12rem;
+    }
   }
 
   &__search {
@@ -238,6 +255,12 @@
     @include respond(tab-land) {
       background-color: transparent;
       width: 100%;
+    }
+    &-2{
+      height: 12.1rem;
+      
+    padding-top: 3.5rem;
+  
     }
   }
 
@@ -279,7 +302,7 @@
 
   .search__location {
     float: left;
-    width: 80%;
+    width: 86%;
     height: 5rem;
     display: flex;
     background-color: $color-white;
@@ -358,7 +381,7 @@
       flex-basis: 47%;
       text-align: right;
       margin: 1rem 1.5rem 1rem 0;
-      padding: 0 22.4rem 0 1.8rem;
+      padding: 0 31.4rem 0 1.8rem;
 
       @include respond(tab-land) {
         flex-basis: 47% !important;
@@ -380,7 +403,7 @@
   .search__btn {
     float: left;
     margin-left: 1.5rem;
-    width: 11.1rem;
+    width: 12%;
     height: 5rem;
     @include respond(tab-land) {
       width: 100% !important;
@@ -433,13 +456,29 @@
     margin-bottom: 0.5rem;
     right: 0;
     bottom: 0;
+    align-items: center;
+    justify-content: center;
+
+    &-2{
+      width: 172px;
+      height: 35px;
+      background-color: rgba(35, 35, 35, 0.65);
+    }
 
     img {
       width: 1.4rem;
     }
+    i{
+      color: $color-white;
+      margin: 0 1rem;
+    }
     span {
       font-size: 1.2rem;
       color: rgba($color-black, 0.8);
+    }
+
+    .location-name-2{
+      color: $color-white;
     }
   }
 }
