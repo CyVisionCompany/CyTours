@@ -14,7 +14,7 @@
   padding-bottom: 192px;
   * {
     max-width: 1366px;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
   //HEADER TOP(NAV)
   .navbar {
@@ -344,7 +344,7 @@
         @include respond(tab-land) {
           margin: 0 !important;
           top: -300% !important;
-          right: 5 !important;
+          right: 50% !important;
         }
 
         i {
@@ -423,6 +423,7 @@
   }
 
   &__location {
+    display: flex;
     background-color: $color-primary;
     width: 69px;
     height: 35px;

@@ -282,10 +282,9 @@ body {
   overflow: hidden;
   width: 100%;
   height: 60vh; }
-  .suggestion__details .suggestion__line {
-    width: 100%;
-    height: 0.5rem;
-    background-color: red; }
+  @media only screen and (max-width: 37.5em) {
+    .suggestion__details {
+      flex-direction: column; } }
   .suggestion__details--card {
     height: 52vh;
     align-self: center;
@@ -297,6 +296,10 @@ body {
     @media only screen and (max-width: 75em) {
       .suggestion__details--card {
         padding: 2rem 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .suggestion__details--card {
+        margin-top: 6rem;
+        width: 70%; } }
     .suggestion__details--card .details__title {
       font-size: 2rem;
       font-weight: 500;
@@ -408,17 +411,25 @@ body {
     flex-basis: 50%;
     display: grid;
     grid-template-columns: 28% 28% 37%;
-    grid-template-rows: 30% 30% 30%;
+    grid-template-rows: repeat(3, 32%);
     grid-gap: 3rem; }
     @media only screen and (max-width: 56.25em) {
       .suggestion__details--album {
         grid-gap: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .suggestion__details--album {
+        grid-gap: 1rem;
+        padding: 1rem;
+        width: 100%;
+        grid-template-rows: repeat(3, 15%);
+        grid-template-columns: repeat(3, 30%); } }
     .suggestion__details--album .album__img-1 {
-      background-image: url("../../img/img-1.jpg");
-      background-size: cover;
       grid-column: 1/3;
       grid-row: 1/3;
       box-shadow: 0 6px 10px 0 rgba(24, 24, 24, 0.18); }
+      .suggestion__details--album .album__img-1 img {
+        width: 100%;
+        height: 100%; }
     .suggestion__details--album .album__img-2 {
       grid-column: 3/4;
       grid-row: 1/4;
@@ -427,11 +438,12 @@ body {
         width: 100%;
         height: 100%; }
     .suggestion__details--album .album__img-3 {
-      background-image: url("../../img/img-3.jpg");
-      background-position: center;
-      background-size: cover;
       grid-column: 1/3;
+      grid-row: 3/4;
       box-shadow: 0 6px 10px 0 rgba(24, 24, 24, 0.18); }
+      .suggestion__details--album .album__img-3 img {
+        width: 100%;
+        height: 100%; }
 
 .header {
   max-width: 100%;
@@ -442,8 +454,7 @@ body {
   padding-top: 41px;
   padding-bottom: 192px; }
   .header * {
-    max-width: 1366px;
-    margin: 0 auto; }
+    max-width: 1366px; }
   .header .navbar {
     width: 100%;
     display: flex;
@@ -698,7 +709,7 @@ body {
           .header .search__location--line .replace-icon {
             margin: 0 !important;
             top: -300% !important;
-            right: 5 !important; } }
+            right: 50% !important; } }
         .header .search__location--line .replace-icon i {
           font-size: 1.6rem;
           margin: 0.8rem; }
@@ -754,6 +765,7 @@ body {
       .header__buttom {
         display: none; } }
   .header__location {
+    display: flex;
     background-color: #144d45;
     width: 69px;
     height: 35px;
@@ -772,6 +784,108 @@ body {
 .fix {
   position: fixed;
   z-index: 10000; }
+
+.footer {
+  background-color: #1d1d1d;
+  width: 100%;
+  padding: 3.7rem 22rem; }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      padding: 2.5rem 15rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 1.5rem 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 1rem 6rem; } }
+  .footer .footer__details {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer .footer__details {
+        padding-bottom: 5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer .footer__details {
+        padding-bottom: 3.5rem; } }
+    .footer .footer__details-logo {
+      flex-basis: 30%;
+      align-self: center;
+      position: relative; }
+      .footer .footer__details-logo svg {
+        float: right; }
+        @media only screen and (max-width: 56.25em) {
+          .footer .footer__details-logo svg {
+            width: 12rem;
+            height: 14rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .footer .footer__details-logo svg {
+            width: 10rem;
+            height: 12rem; } }
+      .footer .footer__details-logo .logo__text {
+        position: absolute;
+        top: 9rem;
+        right: 9.5rem; }
+        @media only screen and (max-width: 56.25em) {
+          .footer .footer__details-logo .logo__text {
+            top: 7rem;
+            right: 7rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .footer .footer__details-logo .logo__text {
+            top: 6rem;
+            right: 6rem; } }
+        .footer .footer__details-logo .logo__text span {
+          color: #fff;
+          font-size: 48px;
+          font-weight: bold;
+          line-height: 0.94;
+          letter-spacing: normal;
+          display: block; }
+          @media only screen and (max-width: 56.25em) {
+            .footer .footer__details-logo .logo__text span {
+              font-size: 3rem; } }
+          @media only screen and (max-width: 37.5em) {
+            .footer .footer__details-logo .logo__text span {
+              font-size: 2.6rem; } }
+    .footer .footer__details-list {
+      flex-basis: 20%; }
+      .footer .footer__details-list span {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff; }
+        @media only screen and (max-width: 56.25em) {
+          .footer .footer__details-list span {
+            font-size: 1.7rem; } }
+      .footer .footer__details-list ul {
+        margin-top: 2rem; }
+        .footer .footer__details-list ul li {
+          font-size: 1.6rem;
+          font-weight: normal;
+          line-height: 2.25;
+          color: #fff; }
+          @media only screen and (max-width: 56.25em) {
+            .footer .footer__details-list ul li {
+              font-size: 1.4rem; } }
+  .footer .footer__connection {
+    padding: 3.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer .footer__connection-logo span {
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 1.2;
+      color: #fff; }
+      @media only screen and (max-width: 56.25em) {
+        .footer .footer__connection-logo span {
+          font-size: 1.7rem; } }
+    .footer .footer__connection-icon i {
+      font-size: 1.6rem;
+      color: #fff;
+      margin: 0 0.75rem; }
+      @media only screen and (max-width: 56.25em) {
+        .footer .footer__connection-icon i {
+          font-size: 1.4rem; } }
 
 .section__features {
   padding: 2rem 20rem;
@@ -835,3 +949,6 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section__suggestion {
       padding: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section__suggestion .suggestion-text {
+      padding: 2rem; } }

@@ -69,4 +69,9 @@
         padding:0;
     }
 
+    .suggestion-text{
+        @include respond(phone){
+            padding: 2rem;
+        }
+    }
 }
