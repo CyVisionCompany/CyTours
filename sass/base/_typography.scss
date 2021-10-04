@@ -11,4 +11,7 @@
     span{
         text-align: center;
     }
+    @include respond(tab-port){
+        font-size: 2.4rem;
+    }
 }

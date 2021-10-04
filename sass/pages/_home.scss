@@ -60,8 +60,7 @@
 
 .section__suggestion{
     padding:  2rem 15rem;
-    margin-top: 1.2rem;
-    height: 100vh;
+    margin: 1.2rem 0;
     @include respond(tab-land){
         padding: 1rem 0;
     }
@@ -72,6 +71,32 @@
     .suggestion-text{
         @include respond(phone){
             padding: 2rem;
+        }
+    }
+}
+
+/////index2 sections
+.section__information{
+    padding:  2rem 15rem;
+    margin: 1.2rem 0;
+    @include respond(tab-land){
+        padding: 1rem 0;
+    }
+    @include respond(tab-port){
+        padding:0;
+    }
+    .information-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            flex-basis: 40%;
+            text-align: left;
+        }
+        .information-line{
+            height: 0.3rem;
+            background-color: rgba($color-black, 0.02);
+            flex-basis: 60%;
         }
     }
 }
