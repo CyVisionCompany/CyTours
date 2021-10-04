@@ -1,15 +1,50 @@
-.comment__top{
-
-    &-img{
-        width: 10rem;
-        height: 10rem;
-        img{
-            width: 100%;
-        }
+.comment__top {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  &-img {
+    width: 10rem;
+    height: 10rem;
+    img {
+      width: 100%;
     }
+  }
 
-    &-icon
-    {
+  &-icon {
+    color: #1e7db6;
+    margin-left: 4rem;
+    font-size: 1.4rem;
+  }
+}
 
+.comment__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+
+  &-text {
+    width: 40%;
+    font-size: 2rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: $color-white;
+    @include respond(tab) {
+      width: 70%;
     }
+  }
+
+  &-next {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2rem;
+  }
 }
