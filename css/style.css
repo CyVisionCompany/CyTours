@@ -518,6 +518,12 @@ body {
     display: grid;
     grid-template-rows: repeat(3, 9rem); }
 
+.comment__top-img {
+  width: 10rem;
+  height: 10rem; }
+  .comment__top-img img {
+    width: 100%; }
+
 .header {
   max-width: 100%;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(24, 24, 24, 0.8)), url(../img/bg-header.jpg);
@@ -1067,3 +1073,19 @@ body {
       height: 0.3rem;
       background-color: rgba(24, 24, 24, 0.02);
       flex-basis: 60%; }
+
+.section__transportation {
+  padding: 2rem 15rem;
+  margin: 1.2rem 0; }
+  @media only screen and (max-width: 75em) {
+    .section__transportation {
+      padding: 1rem 9rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .section__transportation {
+      padding: 0.5rem 1rem; } }
+
+.section__comment {
+  padding: 2rem 15rem;
+  background-color: #181818; }
+  .section__comment .comment-text {
+    text-align: center; }

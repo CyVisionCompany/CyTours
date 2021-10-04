@@ -1,0 +1,90 @@
+// .transportation__details {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+
+//   &-tbl {
+//     // flex-basis: 40%;
+//     width: 44.5rem;
+//     margin-left: 1rem;
+//     @include  respond(tab-port){
+//         width: 43.5rem;
+//     }
+//     @include respond(tab){
+//         // flex-basis: 58%;
+//         width: 41.5rem;
+//     }
+//     table {
+//       width: 100%;
+//       text-align: center;
+//       margin: 2rem 0;
+
+//       th {
+//         padding-bottom: 1.2rem;
+//         span {
+//           font-size: 1.8rem;
+//           color: $color-primary;
+//           padding: 0 1rem;
+//         }
+//       }
+//       .tbl__thflex {
+//         display: flex;
+//         justify-content: center;
+
+//         div {
+//           border: 1px solid;
+//           width: 2.5rem;
+//           height: 2.5rem;
+//           span {
+//             color: rgba($color-black, 0.75);
+//             padding: 0;
+//           }
+//         }
+//       }
+
+//       td {
+//         font-size: 16px;
+//         font-weight: normal;
+//         font-stretch: normal;
+//         font-style: normal;
+//         line-height: 1.88;
+//         letter-spacing: normal;
+//         text-align: left;
+//         color: rgba($color-black, 0.75);
+//         text-align: center;
+//         @include respond(tab-port){
+//             font-size: 1.4rem;
+//         }
+//         img {
+//           width: 3rem;
+          
+//         @include respond(phone){
+//             width: 2.5rem;
+//         }
+//         }
+//       }
+//     }
+//   }
+
+//   &-img {
+//     // flex-basis: 40%;
+//     width: 44rem;
+//     height: 44rem;
+//       border: solid 0.8rem $color-primary;
+//       background-image: url('../../img/map.jpg');
+//       background-position: center;
+//     //   margin-left: 5.7rem;
+//       @include  respond(tab-port){
+//         width: 34rem;
+//     //   margin-left: 3.7rem;
+//       height: 34rem;
+
+//       }
+      
+//       @include  respond(tab){
+//         width: 24rem;
+//         height: 24rem;
+
+//       }
+//   }
+// }

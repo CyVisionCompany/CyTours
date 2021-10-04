@@ -100,3 +100,24 @@
         }
     }
 }
+
+.section__transportation{
+    padding:  2rem 15rem;
+    margin: 1.2rem 0;
+    @include respond(tab-land){
+        padding: 1rem 9rem;
+    }
+    @include respond(tab-port){
+        padding: 0.5rem 1rem;
+    }
+}
+
+.section__comment{
+    padding:  2rem 15rem;
+    background-color: $color-black;
+
+        
+    .comment-text{
+        text-align: center;
+    }
+}
