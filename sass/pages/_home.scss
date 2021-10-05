@@ -127,3 +127,25 @@
     text-align: center;
   }
 }
+
+.section__hotel{
+    padding: 2rem 23rem;
+    @include respond(tab){
+      padding: 2rem 0 ;
+    }
+
+    .hotel-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        flex-basis: 40%;
+        text-align: left;
+      }
+      .hotel-line {
+        height: 0.3rem;
+        background-color: rgba($color-black, 0.02);
+        flex-basis: 60%;
+      }
+    }
+}

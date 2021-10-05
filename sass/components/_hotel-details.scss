@@ -1,0 +1,154 @@
+.hotel__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include respond(tab){
+    align-items: flex-end;
+  }
+
+  &-photo {
+    flex-basis: 50%;
+
+    .photo-album {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 221px 153px 268px;
+      grid-gap: 2.2rem;
+
+      @include respond(tab){
+      grid-template-rows: 171.8px 118.9px 208.3px;
+      grid-column-gap: 1.27rem;
+      grid-row-gap: 1.4rem;
+      }
+      & > * {
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0 6px 10px 0 rgba($color-black, 0.18);
+      }
+
+      &--1 {
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 2;
+      }
+
+      &--2 {
+        grid-row: 1 / 2;
+        grid-column: 3 / span 2;
+      }
+
+      &--3 {
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 2;
+        width: 100%;
+      }
+
+      &--4 {
+        grid-column: 1 / span 3;
+      }
+    }
+
+    .photo-btn {
+      width: 100%;
+      margin: 2.6rem auto;
+      border: solid 0.3rem $color-primary;
+      padding: 2.6rem;
+      text-align: center;
+      margin-top: 2.2rem;
+      @include respond(tab){
+        padding: 2rem;
+      }
+
+      span {
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left;
+        color: $color-black;
+
+        @include respond(tab){
+          font-size: 1.2rem;
+          line-height: 1.33;
+        }
+      }
+    }
+  }
+
+  &-text {
+    flex-basis: 34%;
+    align-self: flex-start;
+    padding-top: 3.5rem;
+    // width: 286px;
+    
+    @include respond(tab-port){
+      padding-top: 0.9rem;
+      flex-basis: 33.5%;
+    }
+
+    .text-title {
+      font-size: 2.4rem;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.25;
+      letter-spacing: normal;
+      text-align: left;
+      color: $color-black;
+      @include respond(tab){
+        font-size: 2rem;
+        line-height: 1.5;
+      }
+    }
+
+    .text-text {
+      font-size: 1.6rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.75);
+      margin-top: 2.6rem;
+      margin-bottom: 13.8rem;
+      @include respond(tab-port){
+        margin-top: 1rem;
+      margin-bottom: 2.7rem;
+      font-size: 1.4rem;
+      line-height: 1.71;
+      height: 48rem;
+      }
+    }
+
+    .text-btn {
+      width: 100%;
+      margin: 2.6rem auto;
+      border: solid 0.3rem $color-primary;
+      padding: 2.6rem;
+      text-align: center;
+      margin-top: 2.2rem;
+      background-color: $color-primary;
+      
+      @include respond(tab){
+          padding: 2rem;
+      }
+
+      span {
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: left;
+        color: $color-white;
+        @include respond(tab){
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
