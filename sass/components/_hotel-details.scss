@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-around;
 
-  @include respond(tab){
+  @include respond(tab) {
     align-items: flex-end;
   }
 
@@ -16,10 +16,10 @@
       grid-template-rows: 221px 153px 268px;
       grid-gap: 2.2rem;
 
-      @include respond(tab){
-      grid-template-rows: 171.8px 118.9px 208.3px;
-      grid-column-gap: 1.27rem;
-      grid-row-gap: 1.4rem;
+      @include respond(tab) {
+        grid-template-rows: 171.8px 118.9px 208.3px;
+        grid-column-gap: 1.27rem;
+        grid-row-gap: 1.4rem;
       }
       & > * {
         height: 100%;
@@ -55,7 +55,7 @@
       padding: 2.6rem;
       text-align: center;
       margin-top: 2.2rem;
-      @include respond(tab){
+      @include respond(tab) {
         padding: 2rem;
       }
 
@@ -69,7 +69,7 @@
         text-align: left;
         color: $color-black;
 
-        @include respond(tab){
+        @include respond(tab) {
           font-size: 1.2rem;
           line-height: 1.33;
         }
@@ -82,8 +82,8 @@
     align-self: flex-start;
     padding-top: 3.5rem;
     // width: 286px;
-    
-    @include respond(tab-port){
+
+    @include respond(tab-port) {
       padding-top: 0.9rem;
       flex-basis: 33.5%;
     }
@@ -97,7 +97,7 @@
       letter-spacing: normal;
       text-align: left;
       color: $color-black;
-      @include respond(tab){
+      @include respond(tab) {
         font-size: 2rem;
         line-height: 1.5;
       }
@@ -114,12 +114,12 @@
       color: rgba(0, 0, 0, 0.75);
       margin-top: 2.6rem;
       margin-bottom: 13.8rem;
-      @include respond(tab-port){
+      @include respond(tab-port) {
         margin-top: 1rem;
-      margin-bottom: 2.7rem;
-      font-size: 1.4rem;
-      line-height: 1.71;
-      height: 48rem;
+        margin-bottom: 2.7rem;
+        font-size: 1.4rem;
+        line-height: 1.71;
+        height: 48rem;
       }
     }
 
@@ -131,9 +131,9 @@
       text-align: center;
       margin-top: 2.2rem;
       background-color: $color-primary;
-      
-      @include respond(tab){
-          padding: 2rem;
+
+      @include respond(tab) {
+        padding: 2rem;
       }
 
       span {
@@ -145,7 +145,7 @@
         letter-spacing: normal;
         text-align: left;
         color: $color-white;
-        @include respond(tab){
+        @include respond(tab) {
           font-size: 1.2rem;
         }
       }

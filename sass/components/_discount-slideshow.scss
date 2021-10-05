@@ -5,40 +5,55 @@
   .discount__card {
     background-size: cover;
     flex-basis: 31.5%;
-    height: 50vh;
+    height: 315px;
     border-radius: 3rem;
     position: relative;
-    @include respond(tab-port){
-          height: 40vh;
+    @include respond(tab-port) {
+      height: 40vh;
     }
-    @include respond(phone){
-          height: 25vh;
+    @include respond(phone) {
+      height: 25vh;
     }
     .discount__btn-white {
       position: absolute;
       top: 20;
       left: 35;
       background-color: $color-white;
-      width: 40%;
+      width: 50.5%;
       text-align: center;
       padding: 11px 21px;
       border-radius: 40px;
 
-      @include respond(tab-land){
-          padding: 6px 11px;
+      @include respond(tab) {
+        padding: 0.9rem 0.5rem;
       }
-      @include respond(tab-port){
-          padding: 6px 0.2rem;
-          font-size: 0.8rem;
-      }
+
+      // @include respond(tab-land) {
+      //   padding: 6px 11px;
+      // }
+      // @include respond(tab-port) {
+      //   padding: 6px 0.2rem;
+      //   font-size: 0.8rem;
+      // }
 
       span {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
 
-        svg{
-          @include respond(tab-port){
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        @include respond(tab) {
+          font-size: 12px;
+          line-height: 1.33;
+        }
+
+        svg {
+          @include respond(tab-port) {
             width: 1rem;
             height: 1rem;
           }
@@ -57,8 +72,8 @@
       justify-content: center;
       align-items: center;
       border-top-left-radius: 50px;
-      
-      span{
+
+      span {
         font-size: 14px;
         font-weight: 500;
         font-stretch: normal;
@@ -67,29 +82,34 @@
         letter-spacing: normal;
         text-align: left;
         color: $color-white;
-        @include respond(tab-land){
+        @include respond(tab) {
           font-size: 1.2rem;
+          line-height: 1.33;
         }
-        @include respond(tab-port){
-          font-size: 0.95rem;
-        }
+        // @include respond(tab-port) {
+        //   font-size: 0.95rem;
+        // }
       }
     }
   }
 
   .post-1 {
     background-image: url("../img/slide-1.jpg");
+
+    &--other {
+      background-image: url("../img/other-1.jpg");
+    }
   }
 
-  .post-2{
+  .post-2 {
     background-image: url("../img/slide-2.jpg");
   }
 
-  .post-3{
+  .post-3 {
     background-image: url("../img/slide-3.jpg");
   }
 
-  .discount__icon{
+  .discount__icon {
     flex-basis: 2%;
     padding: 1rem;
     align-self: center;
@@ -98,13 +118,19 @@
     position: absolute;
     right: 125px;
     background-color: $color-white;
-    @include respond(tab-land){
+
+    @include respond(tab-land) {
       right: 28px;
     }
-    @include respond(tab-port){
-          right: 0.2rem;
-          padding: 0.5rem;
+    @include respond(tab) {
+      right: 0.2rem;
+      padding: 0.5rem;
     }
-    
+
+    &--other {
+      @include respond(tab) {
+        right: 1.2rem;
+      }
+    }
   }
 }
