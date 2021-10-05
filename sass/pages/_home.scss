@@ -110,6 +110,21 @@
   @include respond(tab-port) {
     padding: 0.5rem 1rem;
   }
+
+  .transportation-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      flex-basis: 40%;
+      text-align: left;
+    }
+    .transportation-line {
+      height: 0.3rem;
+      background-color: rgba($color-black, 0.02);
+      flex-basis: 60%;
+    }
+  }
 }
 
 .section__comment {
